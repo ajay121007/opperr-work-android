@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_gravity="center|top"
+              android:layout_width="@dimen/dp_320"
+              android:padding="@dimen/dp_8"
+              android:layout_height="wrap_content">
+
+
+    <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:fontFamily="@font/rubik_regular"
+            android:text="Enter IP Address you\nwould like to add." />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/dp_4"
+            android:layout_marginEnd="@dimen/dp_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:padding="@dimen/dp_4"
+                android:layout_margin="@dimen/dp_8"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatEditText
+                        android:hint="@string/enter_ip_address"
+                        android:id="@+id/edt_IP"
+
+                        android:layout_toLeftOf="@+id/switchStatus"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/rubik_regular"
+                        style="@style/TextAppearance.AppCompat.Large"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                <androidx.appcompat.widget.SwitchCompat
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:theme="@style/SCBSwitch"
+                        android:fontFamily="@font/rubik_regular"
+                        style="@style/TextAppearance.AppCompat.Large"
+                        android:id="@+id/switchStatus"
+                        android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_ok"
+            style="@style/BtnStyleBlack"
+            android:layout_width="@dimen/dp_48"
+            android:layout_height="@dimen/dp_28"
+            android:text="@string/zxing_button_ok"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_8"
+            android:background="@drawable/button_effect"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:layout_marginBottom="16dp"/>
+
+</LinearLayout>

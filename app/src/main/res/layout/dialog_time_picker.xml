@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/textViewTitle"
+              android:background="@color/colorAccentPink"
+              android:textColor="@color/white"
+              android:padding="@dimen/dp_4"
+              android:gravity="center"
+              android:text="@string/pick_start_time"/>
+
+    <TimePicker
+            android:theme="@style/AppTheme.AppThemePink"
+            android:id="@+id/timePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+    >
+
+    </TimePicker>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginRight="@dimen/dp_8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_marginBottom="@dimen/dp_8"
+            android:gravity="end">
+
+        <androidx.appcompat.widget.AppCompatTextView
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/PinkRoseLight"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_width="wrap_content"
+                android:textAllCaps="true"
+                android:id="@+id/tvCancel"
+                android:textStyle="bold"
+                android:layout_marginRight="@dimen/dp_16"
+                android:fontFamily="@font/rubik_regular"
+                android:text="@string/cancel"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/PinkRoseLight"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_width="wrap_content"
+                android:textAllCaps="true"
+                android:id="@+id/tvNext"
+                android:textStyle="bold"
+                android:fontFamily="@font/rubik_regular"
+                android:text="@string/next"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

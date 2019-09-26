@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable name="groupViewModel"
+                  type="com.expert.operrwork.view.adminstrative.groups.GroupViewModel"/>
+        <variable name="data" type="com.expert.operrwork.data.model.group.getAllGroup.ContentItem"/>
+    </data>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/dp_4"
+                    android:background="@drawable/background_line"
+                    android:layout_height="wrap_content">
+
+
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_toLeftOf="@+id/imageButtonNext"
+                      android:orientation="vertical"
+                      android:id="@+id/linearLayoutData"
+                      android:layout_toRightOf="@+id/linearLayoutId"
+                      android:layout_marginLeft="@dimen/dp_8"
+                      android:layout_gravity="center"
+                      android:layout_height="wrap_content">
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:maxLines="1"
+                    android:text="@{data.name}"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="@android:color/black"
+                    android:layout_height="wrap_content"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:maxLines="1"
+                    android:text="@{data.createdByUsr}"
+                    android:layout_height="wrap_content"/>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:maxLines="1"
+                    android:text="@{data.status}"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

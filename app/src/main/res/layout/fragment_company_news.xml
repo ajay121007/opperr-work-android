@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/ll_Operr_work"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dp_40"
+            android:paddingBottom="@dimen/dp_40"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_company_policy"
+                style="@style/TextStyleTitle"
+                android:text="@string/company_news" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_company_policy_msg"
+                style="@style/TextStyleSubTitle"
+                android:text="@string/btn_create_content" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/ll_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/img_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ll_Operr_work">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/Gray" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txt_Input_news_start_date"
+                    style="@style/InputTextStyle">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt_news_start_date"
+                        style="@style/EditTextStyle"
+                        android:hint="@string/start_date"
+                        android:inputType="text" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txt_Input_news_end_notice"
+                style="@style/InputTextStyle"
+                android:background="@drawable/box_background">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_news_end_notice"
+                    style="@style/EditTextStyle"
+                    android:hint="@string/end_notice"
+                    android:inputType="text" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txt_Input_news_specify_department"
+                style="@style/InputTextStyle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_news_specify_department"
+                    style="@style/EditTextStyle"
+                    android:hint="@string/specify_department"
+                    android:inputType="text"
+                    android:paddingStart="@dimen/dp_10"
+                    android:paddingLeft="@dimen/dp_10"
+                    tools:ignore="RtlSymmetry" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txt_Input_optional_notes"
+                style="@style/InputTextStyle"
+                android:background="@drawable/box_background">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_optional_notes"
+                    style="@style/EditTextStyle"
+                    android:hint="@string/content"
+                    android:imeOptions="actionDone"
+                    android:inputType="text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_company_set_news"
+            style="@style/BtnStyleBlack"
+            android:layout_width="160dp"
+            android:layout_marginBottom="32dp"
+            android:padding="@dimen/dp_16"
+            android:text="@string/btn_set_news"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:scaleType="fitXY"
+            android:src="@drawable/background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

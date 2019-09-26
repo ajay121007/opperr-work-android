@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dp_14"
+        android:fontFamily="@font/rubik_regular"
+        android:id="@+id/tvPath"
+        android:layout_marginTop="@dimen/dp_8"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/PinkRoseLight"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/dp_16"
+        android:fontFamily="@font/rubik_regular"
+        android:text="@string/todo_list"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/LightGray"
+        android:layout_marginTop="@dimen/dp_8"
+        android:layout_height="wrap_content">
+
+
+        <View android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/Gray"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:orientation="vertical"
+            android:id="@+id/ll_company"
+            android:layout_margin="@dimen/dp_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:text="@string/str_company"
+                android:fontFamily="@font/rubik_light"
+                android:textAllCaps="true"
+                android:textSize="@dimen/dp_12"
+                android:layout_height="wrap_content"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvCompany"
+                android:fontFamily="@font/rubik_regular"
+                style="@style/TextAppearance.AppCompat.Large"
+                android:hint="@string/select_company"
+                android:textColor="@color/colorPrimaryDark"
+
+                android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <View android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/Gray"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:orientation="vertical"
+            android:layout_margin="@dimen/dp_4"
+            android:id="@+id/ll_agency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:text="@string/str_agency"
+                android:fontFamily="@font/rubik_light"
+                android:textAllCaps="true"
+                android:textSize="@dimen/dp_12"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvAgency"
+                android:hint="@string/select_agency"
+                android:fontFamily="@font/rubik_regular"
+                style="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_width="match_parent"
+                android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                android:layout_height="wrap_content"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <View android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/Gray"/>
+    </LinearLayout>
+
+</LinearLayout>

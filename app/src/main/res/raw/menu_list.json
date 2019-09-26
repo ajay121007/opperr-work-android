@@ -1,0 +1,273 @@
+{"menu_list":[{
+  "id":"1",
+  "name":"Dashboard",
+  "label":"label.dashboard",
+  "routerlink":"/app/dashboard",
+  "order":"1",
+  "checked":false
+},{
+  "id":"62",
+  "name":"Overtime",
+  "label":"label.overtime",
+  "routerlink":"app/overtime/list",
+  "order":"62",
+  "checked":false
+},{
+  "id":"2",
+  "name":"Platform Admin",
+  "label":"label.platform_admin",
+  "routerlink":"app/admin/platform-admin",
+  "order":"21",
+  "checked":false
+},{
+  "id":"3",
+  "name":"Company Admin",
+  "label":"label.company_admin",
+  "routerlink":"app/admin/company-admin",
+  "order":"22",
+  "checked":false
+},{
+  "id":"4",
+  "name":"Agency Admin",
+  "label":"label.agency_admin",
+  "routerlink":"app/admin/agency-admin",
+  "order":"23",
+  "checked":false
+},{
+  "id":"5",
+  "name":"Company Profile",
+  "label":"label.company",
+  "routerlink":"app/company",
+  "order":"31",
+  "checked":false
+},
+  {
+    "id":"7",
+    "name":"Department",
+    "label":"label.department",
+    "routerlink":"app/department",
+    "order":"33",
+    "checked":false
+  },{
+  "id":"8",
+  "name":"Position",
+  "label":"label.position",
+  "routerlink":"app/position",
+  "order":"33",
+  "checked":false
+},{
+  "id":"9",
+  "name":"Content",
+  "label":"label.content",
+  "routerlink":"app/content",
+  "order":"35",
+  "checked":false
+},
+  {
+    "id":"37",
+    "name":"Guest",
+    "label":"label.guest",
+    "routerlink":"app/guest",
+    "order":"42",
+    "checked":false
+  },
+  {
+    "id":"60",
+    "name":"Excusion",
+    "label":"label.excusion",
+    "routerlink":"app/excusion",
+    "order":"42",
+    "checked":false
+  },
+  {
+    "id":"38",
+    "name":"Membership",
+    "label":"label.membership",
+    "routerlink":"app/membership",
+    "order":"38",
+    "checked":false
+  },
+  {
+    "id":"39",
+    "name":"Contribution",
+    "label":"label.contribution",
+    "routerlink":"app/contribution",
+    "order":"42",
+    "checked":false
+  },
+  {
+    "id":"21",
+    "name":"Employee Profile",
+    "label":"label.employee_profile",
+    "routerlink":"app/employee",
+    "order":"51",
+    "checked":false
+  },{
+  "id":"22",
+  "name":"Punch In/Out",
+  "label":"label.Punch In/Out",
+  "routerlink":"app/employee-clocking/punch",
+  "order":"52",
+  "checked":false
+},{
+  "id":"23",
+  "name":"Punch History",
+  "label":"label.punch_history",
+  "routerlink":"app/employee-clocking/punch/history",
+  "order":"53",
+  "checked":false
+},{
+  "id":"24",
+  "name":"Emppyee Payment",
+  "label":"label.employee",
+  "routerlink":"app/employee/payment",
+  "order":"54",
+  "checked":false
+},{
+  "id":"25",
+  "name":"Time Off Review",
+  "label":"",
+  "routerlink":"",
+  "order":"55",
+  "checked":false
+},{
+  "id":"30",
+  "name":"CRM",
+  "label":"",
+  "routerlink":"",
+  "order":"71",
+  "checked":false
+},{
+  "id":"53",
+  "name":"Stock",
+  "label":"",
+  "routerlink":"",
+  "order":"49",
+  "checked":false
+},{
+  "id":"41",
+  "name":"Groups",
+  "label":"",
+  "routerlink":"",
+  "order":"1",
+  "checked":false
+},{
+  "id":"42",
+  "name":"Payroll Settings",
+  "label":"",
+  "routerlink":"",
+  "order":"1",
+  "checked":false
+},{
+  "id":"44",
+  "name":"Performance",
+  "label":"",
+  "routerlink":"",
+  "order":"1",
+  "checked":false
+},{
+  "id":"45",
+  "name":"Protest Hours",
+  "label":"",
+  "routerlink":"",
+  "order":"55",
+  "checked":false
+},{
+  "id":"46",
+  "name":"Event Schedule",
+  "label":"",
+  "routerlink":"",
+  "order":"1",
+  "checked":false
+},{
+  "id":"47",
+  "name":"Time Sheet $$$",
+  "label":"",
+  "routerlink":"",
+  "order":"1",
+  "checked":false
+},{
+  "id":"48",
+  "name":"To Do",
+  "label":"",
+  "routerlink":"",
+  "order":"33",
+  "checked":false
+},{
+  "id":"49",
+  "name":"Process Monitor",
+  "label":"",
+  "routerlink":"",
+  "order":"80",
+  "checked":false
+},{
+  "id":"51",
+  "name":"Client Tranferred",
+  "label":"",
+  "routerlink":"",
+  "order":"71",
+  "checked":false
+},{
+  "id":"52",
+  "name":"EVV Registered",
+  "label":"",
+  "routerlink":"",
+  "order":"71",
+  "checked":false
+},{
+  "id":"56",
+  "name":"Freelancer",
+  "label":"",
+  "routerlink":"",
+  "order":"71",
+  "checked":false
+},{
+  "id":"57",
+  "name":"OPERRTel",
+  "label":"",
+  "routerlink":"",
+  "order":"72",
+  "checked":false
+},{
+  "id":"58",
+  "name":"Phone Package",
+  "label":"",
+  "routerlink":"",
+  "order":"73",
+  "checked":false
+},{
+  "id":"63",
+  "name":"Invoice",
+  "label":"",
+  "routerlink":"",
+  "order":"74",
+  "checked":false
+},{
+  "id":"61",
+  "name":"Patment",
+  "label":"",
+  "routerlink":"",
+  "order":"74",
+  "checked":false
+},{
+  "id":"59",
+  "name":"Payment",
+  "label":"",
+  "routerlink":"",
+  "order":"75",
+  "checked":false
+},{
+  "id":"64",
+  "name":"ChatBox",
+  "label":"",
+  "routerlink":"",
+  "order":"74",
+  "checked":false
+},{
+  "id":"65",
+  "name":"Invoice",
+  "label":"",
+  "routerlink":"",
+  "order":"77",
+  "checked":false
+}]}

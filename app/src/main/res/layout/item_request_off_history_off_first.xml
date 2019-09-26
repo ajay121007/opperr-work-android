@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_time_dispute_detail"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:padding="@dimen/dp_8"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/u00b7"
+        android:textSize="36sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_history_dates"
+        style="@style/TextStyleSubTitlePunch"
+        android:layout_width="0dp"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:layout_weight="1"
+        android:textColor="@android:color/black"
+        android:gravity="start|center"
+        android:text="@string/time_wed" />
+
+</LinearLayout>

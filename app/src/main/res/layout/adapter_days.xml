@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:orientation="vertical"
+              android:id="@+id/rootLayout"
+              android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_8"
+            android:orientation="horizontal"
+    >
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/checkBox"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewItemName"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:background="@null"
+                android:text="Home"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/dp_8"
+                android:layout_marginTop="@dimen/dp_4"
+                android:layout_toRightOf="@+id/checkBox"
+                android:fontFamily="@font/rubik_regular"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_height="wrap_content"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

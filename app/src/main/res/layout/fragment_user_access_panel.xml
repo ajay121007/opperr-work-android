@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dp_120"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayoutCompat">
+
+        <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_splash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo"
+                android:layout_gravity="center_horizontal"
+        />
+
+        <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_operr"
+                android:layout_marginTop="@dimen/dp_40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textAllCaps="true"
+                android:fontFamily="@font/rubik_regular"
+                android:textColor="@android:color/black"
+                android:textSize="46sp"
+                app:fontFamily="serif"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_below="@+id/linearLayoutCompat"
+            android:background="@drawable/background">
+        <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_login"
+                style="@style/BtnStyleBlack"
+                android:layout_width="160dp"
+                android:text="@string/btn_login"
+                android:padding="@dimen/dp_16"
+                android:background="@drawable/button_effect"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:layout_marginBottom="16dp"/>
+        <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_register"
+                style="@style/TextStyleBlue"
+                android:text="@string/btn_register"
+                android:padding="@dimen/dp_18"
+                android:visibility="gone"
+                android:layout_below="@+id/btn_login"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

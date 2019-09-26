@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_pay_stubs_earning_type"
+        style="@style/TextStyleEarnings"
+        android:layout_weight="2.5"
+        android:layout_width="@dimen/dp_0"
+        android:gravity="start"
+        android:paddingStart="@dimen/dp_4"
+        android:paddingEnd="@dimen/dp_4"
+        android:text="@string/type" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_pay_stubs_earning_hr"
+        style="@style/TextStyleEarnings"
+        android:layout_width="@dimen/dp_0"
+        android:layout_weight="1.5"
+        android:text="@string/hr" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_pay_stubs_earning_hrs"
+        style="@style/TextStyleEarnings"
+        android:layout_weight="1.5"
+        android:layout_width="@dimen/dp_0"
+        android:text="@string/hrs" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_pay_stubs_earning_current"
+        style="@style/TextStyleEarnings"
+        android:layout_weight="2"
+        android:layout_width="@dimen/dp_0"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:text="@string/current" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_pay_stubs_earning_ytd"
+        style="@style/TextStyleEarnings"
+        android:layout_weight="2"
+        android:layout_width="@dimen/dp_0"
+        android:text="@string/ytd" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

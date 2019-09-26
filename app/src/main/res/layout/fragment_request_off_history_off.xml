@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/ll_Operr_work"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dp_40"
+        android:paddingBottom="@dimen/dp_40"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_my_off_history"
+            style="@style/TextStyleTitle"
+            android:text="@string/history_of_off_days" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_history_off_used"
+            style="@style/TextStyleSubTitle"
+            android:text="@string/Remaining_available_days" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <ExpandableListView
+        android:id="@+id/el_history_off"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:childIndicator="@null"
+        android:groupIndicator="@drawable/group_indicator"
+        android:overScrollMode="never" />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

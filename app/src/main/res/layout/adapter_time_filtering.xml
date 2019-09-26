@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:background="@color/LightGray"
+              android:orientation="vertical"
+              android:layout_height="wrap_content">
+
+
+    <View android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/Gray"/>
+
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:layout_margin="@dimen/dp_8"
+                  android:orientation="horizontal">
+    <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_web"
+            android:layout_gravity="center"
+            android:tint="@color/colorPrimaryDark"
+            android:layout_height="wrap_content"/>
+
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+                android:hint="@string/email"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:background="@null"
+                android:fontFamily="@font/rubik_regular"
+                style="@style/TextAppearance.AppCompat.Large"
+                android:inputType="text"
+                android:text="192.162."
+                android:layout_height="wrap_content"/>
+        <androidx.appcompat.widget.AppCompatTextView
+                android:hint="@string/email"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:background="@null"
+                android:fontFamily="@font/rubik_regular"
+                style="@style/TextAppearance.AppCompat.Large"
+                android:inputType="text"
+                android:text="192.162."
+                android:layout_height="wrap_content"/>
+        <androidx.appcompat.widget.AppCompatTextView
+                android:hint="@string/email"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:background="@null"
+                android:fontFamily="@font/rubik_regular"
+                style="@style/TextAppearance.AppCompat.Large"
+                android:inputType="text"
+                android:text="192.162.sdsf"
+                android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.SwitchCompat
+            android:layout_gravity="end|center"
+            android:layout_width="match_parent"
+            android:theme="@style/SCBSwitch"
+            android:layout_marginRight="@dimen/dp_8"
+            android:fontFamily="@font/rubik_regular"
+            style="@style/TextAppearance.AppCompat.Large"
+            android:id="@+id/switchEmail"
+
+            android:checked="false"
+            android:layout_height="wrap_content"/>
+
+</LinearLayout>
+    <View android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/Gray"/>
+
+</LinearLayout>

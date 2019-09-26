@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+    <ScrollView android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="@dimen/dp_12">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/dp_14"
+                    android:fontFamily="@font/rubik_regular"
+                    android:layout_gravity="center"
+                    android:id="@+id/tvPath"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:text="Home>Adminstrative"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="@color/PinkRoseLight"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:fontFamily="@font/rubik_regular"
+                    android:text="@string/str_group_list"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/LightGray"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:layout_height="wrap_content">
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                        android:orientation="vertical"
+                        android:layout_margin="@dimen/dp_4"
+                        android:id="@+id/ll_group_company"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:text="@string/str_company"
+                            android:textSize="@dimen/dp_12"
+                            android:textAllCaps="true"
+                            android:fontFamily="@font/rubik_light"
+                            android:layout_height="wrap_content"/>
+                    <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvCompany"
+                            android:fontFamily="@font/rubik_regular"
+                            style="@style/TextAppearance.AppCompat.Large"
+                            android:hint="@string/select_company"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                <View android:layout_width="match_parent"
+                      android:layout_height="1dp"
+                      android:background="@color/Gray"/>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                        android:orientation="vertical"
+                        android:layout_margin="@dimen/dp_4"
+                        android:id="@+id/ll_agency"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:text="@string/str_agency"
+                            android:textAllCaps="true"
+                            android:textSize="@dimen/dp_12"
+                            android:fontFamily="@font/rubik_light"
+                            android:layout_height="wrap_content"/>
+                    <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/textViewAgency"
+                            android:fontFamily="@font/rubik_regular"
+                            style="@style/TextAppearance.AppCompat.Large"
+                            android:hint="@string/str_select_agency"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <View android:layout_width="match_parent"
+                      android:layout_height="1dp"
+                      android:background="@color/Gray"/>
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="@color/PinkRoseLight"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:fontFamily="@font/rubik_regular"
+                    android:text="@string/str_matching_groups"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_groups"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:layout_height="match_parent">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="16dp"
+            android:paddingBottom="@dimen/dp_12"
+            android:layout_alignParentBottom="true"
+            app:backgroundTint="?colorPrimary"
+            app:srcCompat="@android:drawable/ic_input_add"
+            android:tint="@android:color/white"
+            android:layout_alignParentEnd="true"
+            />
+
+</RelativeLayout>

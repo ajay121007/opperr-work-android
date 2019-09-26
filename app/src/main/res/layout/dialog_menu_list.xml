@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="280dp"
+              android:padding="@dimen/dp_16"
+              android:id="@+id/linearLayoutParent"
+              android:layout_gravity="center_horizontal"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:fontFamily="@font/rubik_regular"
+            android:text="Choose menu you\nwould like to add." />
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_280">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_ok"
+            style="@style/BtnStyleBlack"
+            android:layout_width="@dimen/dp_48"
+            android:layout_height="@dimen/dp_28"
+            android:text="@string/zxing_button_ok"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_8"
+            android:background="@drawable/button_effect"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:layout_marginBottom="16dp"/>
+
+
+</LinearLayout>

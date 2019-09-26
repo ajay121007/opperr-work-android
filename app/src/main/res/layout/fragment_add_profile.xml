@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:gravity="center">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll_Operr_work"
+            app:layout_constraintTop_toTopOf="parent"
+            android:paddingTop="@dimen/dp_40"
+            android:paddingBottom="@dimen/dp_40"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_add_profile"
+                android:text="@string/add_profile_image"
+                style="@style/TextStyleTitle"
+                />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/img_upload"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/img_background"
+            app:layout_constraintTop_toBottomOf="@+id/ll_Operr_work"
+            android:background="@drawable/dotted_background"
+            android:layout_marginStart="@dimen/dp_64"
+            android:layout_marginEnd="@dimen/dp_64"
+            android:src="@drawable/ic_add_profile"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_add_profile_continue"
+            style="@style/BtnStyleBlack"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="160dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="@string/btn_continue"
+            android:padding="@dimen/dp_16"
+            android:textAllCaps="false"
+            android:layout_marginBottom="32dp"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_skip_this"
+            style="@style/TextStyleBlue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="@string/skip_this_step"
+            app:layout_constraintTop_toTopOf="@+id/img_background"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_add_profile_continue"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintVertical_bias="0.6"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/background"
+            android:layout_gravity="bottom"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

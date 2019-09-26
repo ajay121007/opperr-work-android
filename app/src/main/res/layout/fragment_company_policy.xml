@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:gravity="center">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll_Operr_work"
+            app:layout_constraintTop_toTopOf="parent"
+            android:paddingTop="@dimen/dp_40"
+            android:paddingBottom="@dimen/dp_40"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_company_policy"
+                style="@style/TextStyleTitle"
+                android:text="@string/company_policy"
+                />
+
+        <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_company_policy_msg"
+                android:text="@string/msg_please_sign_your_name"
+                style="@style/TextStyleSubTitle"
+                />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/img_background"
+            app:layout_constraintTop_toBottomOf="@+id/ll_Operr_work">
+
+
+        <com.kyanogen.signatureview.SignatureView
+                xmlns:sign="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/signature_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                sign:penSize="5dp"
+                sign:backgroundColor="#ffffff"
+                sign:penColor="#000000"
+                sign:enableSignature="true"
+                />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_clear_sign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_clear_black_24dp"
+                android:layout_marginEnd="@dimen/dp_32"
+                android:layout_gravity="end"
+                android:padding="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_32"/>
+
+    </FrameLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="@dimen/dp_32"
+            android:layout_marginEnd="@dimen/dp_32"
+            android:background="@color/Gray"
+            app:layout_constraintBottom_toTopOf="@+id/img_background"/>
+
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/cb_agree_to_terms"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="@string/i_agree_term"
+            app:layout_constraintTop_toTopOf="@+id/img_background"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_company_register"
+            app:layout_constraintVertical_bias="0.6"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_company_register"
+            style="@style/BtnStyleBlack"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="160dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="@string/btn_register"
+            android:padding="@dimen/dp_16"
+            android:textAllCaps="false"
+            android:layout_marginBottom="32dp"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/background"
+            android:layout_gravity="bottom"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

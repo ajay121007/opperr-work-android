@@ -1,0 +1,464 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/Gray</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@android:color/transparent
+        </item>
+        <item name="android:windowTranslucentNavigation" tools:targetApi="kitkat">true</item>
+        <item name="android:windowTranslucentStatus" tools:targetApi="kitkat">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds" tools:targetApi="lollipop">false</item>
+        <item name="android:textViewStyle">@style/TextViewStyle</item>
+        <item name="android:buttonStyle">@style/ButtonStyle</item>
+        <item name="android:checkboxStyle">@style/CheckBoxStyle</item>
+       <!-- <item name="android:homeAsUpIndicator">@drawable/ic_back</item>-->
+
+    </style>
+
+    <style name="SCBSwitch" parent="Theme.AppCompat.Light">
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="colorControlActivated">@color/colorPrimaryDarkGreen</item>
+        <!-- inactive thumb color -->
+        <item name="colorSwitchThumbNormal">#f1f1f1</item>
+        <!-- inactive track color (30% transparency) -->
+        <item name="android:colorForeground">#42221f1f</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+      <!--  <item name="android:homeAsUpIndicator">@drawable/ic_back</item>-->
+
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppThemeUser" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/Gray</item>
+        <item name="android:textViewStyle">@style/TextViewStyle</item>
+        <item name="android:buttonStyle">@style/ButtonStyle</item>
+      <!--  <item name="android:homeAsUpIndicator">@drawable/ic_back</item>-->
+    </style>
+
+
+    <!--Default TextFontStyle-->
+    <style name="TextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">serif</item>
+    </style>
+    <!--Default ButtonFontStyle-->
+    <style name="ButtonStyle" parent="android:Widget.Holo.Button">
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">serif</item>
+    </style>
+    <!--Default CheckBox ButtonFontStyle-->
+    <style name="CheckBoxStyle" parent="android:Widget.Holo.CompoundButton.CheckBox">
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">serif</item>
+    </style>
+
+    <!-- theme black -->
+    <style name="AppTheme.AppThemeBlack">
+        <item name="colorPrimary">@color/colorPrimaryBlack</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkBlack</item>
+        <item name="colorAccent">@color/colorAccentBlack</item>
+    </style>
+
+    <!-- theme blue-->
+    <style name="AppTheme.AppThemeBlue">
+        <item name="colorPrimary">@color/colorPrimaryBlue</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkBlue</item>
+        <item name="colorAccent">@color/colorAccentBlue</item>
+    </style>
+
+    <!-- theme BlueGreen-->
+    <style name="AppTheme.AppThemeBlueGreen">
+        <item name="colorPrimary">@color/colorPrimaryBlueGreen</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkBlueGreen</item>
+        <item name="colorAccent">@color/colorAccentBlueGreen</item>
+    </style>
+
+    <!-- theme GreyBlue-->
+    <style name="AppTheme.AppThemeGreyBlue">
+        <item name="colorPrimary">@color/colorPrimaryGreyBlue</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkGreyBlue</item>
+        <item name="colorAccent">@color/colorAccentGreyBlue</item>
+    </style>
+
+    <!-- theme pink-->
+    <style name="AppTheme.AppThemePink">
+        <item name="colorPrimary">@color/colorPrimaryPink</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPink</item>
+        <item name="colorAccent">@color/colorAccentPink</item>
+    </style>
+
+    <!-- theme Yellow-->
+    <style name="AppTheme.AppThemeYellow">
+        <item name="colorPrimary">@color/colorPrimaryYellow</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkYellow</item>
+        <item name="colorAccent">@color/colorAccentYellow</item>
+    </style>
+
+    <!-- theme Red-->
+    <style name="AppTheme.AppThemeRed">
+        <item name="colorPrimary">@color/colorPrimaryRed</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkRed</item>
+        <item name="colorAccent">@color/colorAccentRed</item>
+    </style>
+    <!-- theme Green-->
+    <style name="AppTheme.AppThemeGreen">
+        <item name="colorPrimary">@color/colorPrimaryGreen</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkGreen</item>
+        <item name="colorAccent">@color/colorAccentGreen</item>
+    </style>
+    <!-- theme Purple-->
+    <style name="AppTheme.AppThemePurple">
+        <item name="colorPrimary">@color/colorPrimaryPurple</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPurple</item>
+        <item name="colorAccent">@color/colorAccentPurple</item>
+    </style>
+
+    <style name="SplashScreen" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/PinkRoseLight</item>
+        <item name="colorPrimaryDark">@color/PinkRoseDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!--image styles-->
+
+    <!--ImageStyle Icon-->
+    <style name="ImgIcon">
+        <item name="android:src">@drawable/ic_launcher_background</item>
+        <item name="android:layout_width">24dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:layout_margin">@dimen/dp_4</item>
+    </style>
+
+    <!--ImageStyle IconBig-->
+    <style name="ImgIconBig">
+        <item name="android:src">@drawable/ic_launcher_background</item>
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+    </style>
+
+
+    <!--ImageStyle SquareSmall-->
+    <style name="ImgSquareSmall">
+        <item name="android:src">@drawable/ic_launcher_background</item>
+        <item name="android:layout_width">74dp</item>
+        <item name="android:layout_height">74dp</item>
+    </style>
+
+
+    <!--ImageStyle SquareMedium-->
+    <style name="ImgSquareMedium">
+        <item name="android:src">@drawable/ic_launcher_background</item>
+        <item name="android:layout_width">98dp</item>
+        <item name="android:layout_height">98dp</item>
+    </style>
+
+    <!--ImageStyle SquareBig-->
+    <style name="ImgSquareBig">
+        <item name="android:src">@drawable/ic_launcher_background</item>
+        <item name="android:layout_width">148dp</item>
+        <item name="android:layout_height">148dp</item>
+    </style>
+
+    <!--ImageStyle WideAngle-->
+    <style name="ImgWideAngle">
+        <item name="android:src">@drawable/ic_launcher_background</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">168dp</item>
+    </style>
+
+    <!--button style-->
+    <style name="BtnStyleWhite">
+        <item name="android:textSize">@dimen/sp_16
+        </item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/btn_style_user_access</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="BtnStyleBlack">
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:background">@drawable/btn_style</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="BtnStyleClockIn">
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:textColor">@color/TextColorBlue</item>
+        <item name="android:background">@drawable/btn_style_clock_in</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="BtnStyle350">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:background">@drawable/btn_style</item>
+        <item name="android:layout_width">350dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="BtnStyle250">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:background">@drawable/btn_style</item>
+        <item name="android:layout_width">250dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="BtnStyle200">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:background">@drawable/btn_style</item>
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="BtnStyle150">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:background">@drawable/btn_style</item>
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="BtnStyle100">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:background">@drawable/btn_style</item>
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <!-- TextView -->
+    <style name="TextStyleDate">
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/txt_style_date</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:padding">@dimen/dp_12</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/dp_12</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <!-- TextView -->
+    <style name="TextStyleTitle">
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:textColor">@color/PinkRoseLight</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:fontFamily" tools:ignore="NewApi">serif</item>
+
+    </style>
+
+
+
+    <style name="TextStyleEarnings">
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:textColor">@color/DarkGrayDark</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">@dimen/dp_12</item>
+        <item name="android:paddingBottom">@dimen/dp_12</item>
+        <item name="android:background">@drawable/txt_style_earning</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily" tools:ignore="NewApi">serif</item>
+    </style>
+
+  <style name="TextStyleItemDetails">
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:textColor">@color/DarkGrayDark</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">@dimen/dp_12</item>
+        <item name="android:paddingBottom">@dimen/dp_12</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily" tools:ignore="NewApi">serif</item>
+    </style>
+
+    <style name="TextStyleTitleMyProfile">
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:fontFamily" tools:ignore="NewApi">serif</item>
+    </style>
+
+    <style name="TextStyleSubTitle">
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:textColor">@color/DarkGrayLight</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:fontFamily" tools:ignore="NewApi">serif</item>
+        <item name="android:layout_marginTop">@dimen/dp_10</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginStart" tools:ignore="NewApi">@dimen/dp_32</item>
+        <item name="android:layout_marginEnd" tools:ignore="NewApi">@dimen/dp_32</item>
+    </style>
+
+    <style name="TextStyleSubTitlePunch">
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:textColor">@color/DarkGrayLight</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:fontFamily" tools:ignore="NewApi">serif</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="TextStylePurple">
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily" tools:ignore="NewApi">serif</item>
+    </style>
+
+    <style name="TextStyleBlue">
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:padding">@dimen/dp_12</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/dp_12</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="TextStylePunchBlue">
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:textColor">@color/TextColorBlue</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="EditTextStyle">
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:textColor">@color/DarkGrayLight</item>
+        <item name="android:padding">@dimen/dp_12</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:paddingStart">@dimen/dp_24</item>
+        <item name="android:paddingLeft">@dimen/dp_24</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:fontFamily" tools:ignore="NewApi">serif</item>
+    </style>
+
+    <style name="EditTextKeyStyle">
+        <item name="android:textSize">@dimen/sp_28</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:padding">@dimen/dp_12</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:maxLength">1</item>
+        <item name="android:layout_marginStart">@dimen/dp_12</item>
+        <item name="android:layout_marginLeft">@dimen/dp_12</item>
+        <item name="android:layout_marginEnd">@dimen/dp_12</item>
+        <item name="android:layout_marginRight">@dimen/dp_12</item>
+        <item name="android:textCursorDrawable">@color/white</item>
+        <item name="android:background">@drawable/edt_key_style</item>
+        <item name="android:fontFamily" tools:ignore="NewApi">serif</item>
+        <item name="android:inputType">number</item>
+
+    </style>
+
+    <style name="EditTextKeyNote">
+        <item name="android:textSize">@dimen/sp_18</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:padding">@dimen/dp_12</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:layout_marginStart">@dimen/dp_54</item>
+        <item name="android:layout_marginLeft">@dimen/dp_54</item>
+        <item name="android:layout_marginEnd">@dimen/dp_54</item>
+        <item name="android:layout_marginRight">@dimen/dp_54</item>
+        <item name="android:background">@drawable/note_style</item>
+        <item name="android:fontFamily" tools:ignore="NewApi">serif</item>
+    </style>
+
+    <style name="BackgroundPurple">
+        <item name="android:textSize">@dimen/sp_18</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:padding">@dimen/dp_12</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:background">@drawable/note_style</item>
+        <item name="android:fontFamily" tools:ignore="NewApi">serif</item>
+    </style>
+
+
+    <style name="InputTextStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_alignParentStart">@dimen/dp_18</item>
+        <item name="android:layout_alignParentLeft">@dimen/dp_18</item>
+    </style>
+
+
+    <style name="Widget.Design.TextInputLayout" parent="AppTheme">
+        <item name="hintTextAppearance">@style/AppTheme.TextFloatLabelAppearance</item>
+        <item name="errorTextAppearance">@style/AppTheme.TextErrorAppearance</item>
+        <item name="counterTextAppearance">@style/TextAppearance.Design.Counter</item>
+        <item name="counterOverflowTextAppearance">@style/TextAppearance.Design.Counter.Overflow
+        </item>
+    </style>
+
+    <style name="AppTheme.TextFloatLabelAppearance" parent="TextAppearance.Design.Hint">
+        <!-- Floating label appearance here -->
+        <item name="android:textColor">@color/DarkGrayDark</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+    </style>
+
+    <style name="AppTheme.TextErrorAppearance" parent="TextAppearance.Design.Error">
+        <!-- Error message appearance here -->
+        <item name="android:textColor">#ff0000</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+    </style>
+
+</resources>

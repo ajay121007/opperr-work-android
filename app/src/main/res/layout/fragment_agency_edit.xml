@@ -1,0 +1,850 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable name="model"
+                  type="com.expert.operrwork.data.model.agencyAdminById.Data"/>
+    </data>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ScrollView
+                android:layout_width="match_parent"
+                android:fillViewport="true"
+                android:layout_height="match_parent">
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/dp_14"
+                        android:fontFamily="@font/rubik_regular"
+                        android:layout_gravity="center"
+                        android:id="@+id/tvPath"
+                        android:layout_marginTop="@dimen/dp_8"
+                        android:text="Home>Adminstrative"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="@dimen/dp_84"
+                        android:layout_height="@dimen/dp_84"
+                        app:civ_border_width="@dimen/dp_2"
+                        android:layout_margin="@dimen/dp_4"
+                        android:id="@+id/imageViewUpload"
+                        app:civ_border_color="@android:color/darker_gray"
+                        android:layout_marginTop="@dimen/dp_16"
+                        android:src="@drawable/avatar"
+                        android:layout_gravity="center"
+                />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/PinkRoseLight"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="@dimen/dp_16"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/rubik_regular"
+                        android:text="Agency Name"/>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:background="@color/LightGray"
+                        android:layout_marginTop="@dimen/dp_8"
+                        android:layout_height="wrap_content">
+
+                    <View android:layout_width="match_parent"
+                          android:layout_height="1dp"
+                          android:background="@color/Gray"/>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                            android:orientation="vertical"
+                            android:layout_margin="@dimen/dp_4"
+                            android:id="@+id/ll_company"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="match_parent"
+                                android:text="@string/str_company"
+                                android:fontFamily="@font/rubik_light"
+                                android:textSize="@dimen/dp_12"
+                                android:textAllCaps="true"
+                                android:layout_height="wrap_content"/>
+                        <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tvCompany"
+                                android:hint="@string/select_company"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:fontFamily="@font/rubik_regular"
+                                android:text="@{model.company.name}"
+                                style="@style/TextAppearance.AppCompat.Large"
+                                android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <View android:layout_width="match_parent"
+                          android:layout_height="1dp"
+                          android:background="@color/Gray"/>
+
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                            android:orientation="vertical"
+                            android:layout_margin="@dimen/dp_4"
+                            android:id="@+id/llAgency"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="match_parent"
+                                android:text="@string/str_agency"
+                                android:textSize="@dimen/dp_12"
+                                android:fontFamily="@font/rubik_light"
+                                android:textAllCaps="true"
+                                android:layout_height="wrap_content"/>
+                        <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tvAgency"
+                                android:hint="@string/select_agency"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:fontFamily="@font/rubik_regular"
+                                android:text="@{model.agency.name}"
+                                style="@style/TextAppearance.AppCompat.Large"
+                                android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <View android:layout_width="match_parent"
+                          android:layout_height="1dp"
+                          android:background="@color/Gray"/>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                            android:orientation="vertical"
+                            android:layout_margin="@dimen/dp_4"
+                            android:id="@+id/llBringEmployee"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="match_parent"
+                                android:text="@string/str_bring_employee"
+                                android:fontFamily="@font/rubik_light"
+                                android:textAllCaps="true"
+                                android:textSize="@dimen/dp_12"
+                                android:layout_height="wrap_content"/>
+                        <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tvBringEmployee"
+                                android:hint="@string/please_select"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:fontFamily="@font/rubik_regular"
+                                style="@style/TextAppearance.AppCompat.Large"
+                                android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                    tvGender
+                    <View android:layout_width="match_parent"
+                          android:layout_height="1dp"
+                          android:background="@color/Gray"/>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                            android:orientation="vertical"
+                            android:layout_margin="@dimen/dp_4"
+                            android:id="@+id/llAdminType"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="match_parent"
+                                android:text="@string/str_admin_type"
+                                android:fontFamily="@font/rubik_light"
+                                android:textSize="@dimen/dp_12"
+                                android:textAllCaps="true"
+                                android:layout_height="wrap_content"/>
+                        <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tvAdminType"
+                                android:hint="@string/please_select"
+                                android:text="@{model.role.levelName}"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:fontFamily="@font/rubik_regular"
+                                style="@style/TextAppearance.AppCompat.Large"
+                                android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                    <View android:layout_width="match_parent"
+                          android:layout_height="1dp"
+                          android:background="@color/Gray"/>
+
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                            android:orientation="vertical"
+                            android:layout_margin="@dimen/dp_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="match_parent"
+                                android:text="@string/str_first_name"
+                                android:textSize="@dimen/dp_12"
+                                android:fontFamily="@font/rubik_light"
+                                android:textAllCaps="true"
+                                android:layout_height="wrap_content"/>
+                        <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/edt_first_name"
+                                android:hint="@string/str_enter_first_name"
+                                android:fontFamily="@font/rubik_regular"
+                                style="@style/TextAppearance.AppCompat.Large"
+                                android:layout_width="match_parent"
+                                android:background="@null"
+                                android:inputType="text"
+                                android:text="@{model.firstName}"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:layout_height="wrap_content"/>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <View android:layout_width="match_parent"
+                          android:layout_height="1dp"
+                          android:background="@color/Gray"/>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                            android:orientation="vertical"
+                            android:layout_margin="@dimen/dp_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="match_parent"
+                                android:text="@string/str_middle_name"
+                                android:fontFamily="@font/rubik_light"
+                                android:textAllCaps="true"
+                                android:textSize="@dimen/dp_12"
+                                android:layout_height="wrap_content"/>
+                        <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/edt_middle_name"
+                                android:hint="@string/str_enter_middle_name"
+                                android:fontFamily="@font/rubik_regular"
+                                style="@style/TextAppearance.AppCompat.Large"
+                                android:text="@{model.middleName}"
+                                android:layout_width="match_parent"
+                                android:background="@null"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:inputType="text"
+                                android:layout_height="wrap_content"/>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <View android:layout_width="match_parent"
+                          android:layout_height="1dp"
+                          android:background="@color/Gray"/>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                            android:orientation="vertical"
+                            android:layout_margin="@dimen/dp_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="match_parent"
+                                android:text="@string/str_last_name"
+                                android:textSize="@dimen/dp_12"
+                                android:fontFamily="@font/rubik_light"
+                                android:textAllCaps="true"
+                                android:layout_height="wrap_content"/>
+                        <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/edt_last_name"
+                                android:hint="@string/str_enter_last_name"
+                                android:layout_width="match_parent"
+                                android:background="@null"
+                                android:text="@{model.lastName}"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:inputType="text"
+                                android:fontFamily="@font/rubik_regular"
+                                style="@style/TextAppearance.AppCompat.Large"
+                                android:layout_height="wrap_content"/>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <View android:layout_width="match_parent"
+                          android:layout_height="1dp"
+                          android:background="@color/Gray"/>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                            android:orientation="vertical"
+                            android:layout_margin="@dimen/dp_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="match_parent"
+                                android:text="@string/email"
+                                android:fontFamily="@font/rubik_light"
+                                android:textAllCaps="true"
+                                android:textSize="@dimen/dp_12"
+                                android:layout_height="wrap_content"/>
+                        <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/edt_email"
+                                android:hint="@string/str_enter_email"
+                                android:fontFamily="@font/rubik_regular"
+                                style="@style/TextAppearance.AppCompat.Large"
+                                android:layout_width="match_parent"
+                                android:background="@null"
+                                android:text="@{model.email}"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:inputType="textEmailAddress"
+                                android:layout_height="wrap_content"/>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <View android:layout_width="match_parent"
+                          android:layout_height="1dp"
+                          android:background="@color/Gray"/>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                            android:orientation="vertical"
+                            android:layout_margin="@dimen/dp_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="match_parent"
+                                android:text="@string/phone_number"
+                                android:fontFamily="@font/rubik_light"
+                                android:textAllCaps="true"
+                                android:layout_height="wrap_content"/>
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/edt_phone"
+                                android:hint="@string/str_enter_phone"
+                                android:fontFamily="@font/rubik_regular"
+                                style="@style/TextAppearance.AppCompat.Large"
+                                android:layout_width="match_parent"
+                                android:background="@null"
+                                android:text="@{model.phone}"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:inputType="phone"
+                                android:layout_height="wrap_content"/>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <View android:layout_width="match_parent"
+                          android:layout_height="1dp"
+                          android:background="@color/Gray"/>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                            android:orientation="vertical"
+                            android:layout_margin="@dimen/dp_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="match_parent"
+                                android:text="@string/secondary_phone_number"
+                                android:fontFamily="@font/rubik_light"
+                                android:textAllCaps="true"
+                                android:textSize="@dimen/dp_12"
+                                android:layout_height="wrap_content"/>
+                        <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/edt_secondary_phone"
+                                android:hint="@string/str_enter_phone"
+                                android:layout_width="match_parent"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:text="@{model.secondaryPhone}"
+                                android:background="@null"
+                                android:inputType="phone"
+                                android:fontFamily="@font/rubik_regular"
+                                style="@style/TextAppearance.AppCompat.Large"
+                                android:layout_height="wrap_content"/>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <View android:layout_width="match_parent"
+                          android:layout_height="1dp"
+                          android:background="@color/Gray"/>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                            android:orientation="vertical"
+                            android:layout_margin="@dimen/dp_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="match_parent"
+                                android:text="@string/address_one"
+                                android:fontFamily="@font/rubik_light"
+                                android:textAllCaps="true"
+                                android:textSize="@dimen/dp_12"
+                                android:layout_height="wrap_content"/>
+                        <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/edt_address_one"
+                                android:hint="@string/str_address_one"
+                                android:layout_width="match_parent"
+                                android:fontFamily="@font/rubik_regular"
+                                style="@style/TextAppearance.AppCompat.Large"
+                                android:background="@null"
+                                android:text="@{model.agency.addressOne}"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:inputType="textPostalAddress"
+                                android:layout_height="wrap_content"/>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <View android:layout_width="match_parent"
+                          android:layout_height="1dp"
+                          android:background="@color/Gray"/>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                            android:orientation="vertical"
+                            android:layout_margin="@dimen/dp_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="match_parent"
+                                android:text="@string/address_two"
+                                android:textSize="@dimen/dp_12"
+                                android:fontFamily="@font/rubik_light"
+                                android:textAllCaps="true"
+                                android:layout_height="wrap_content"/>
+                        <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/edt_address_two"
+                                android:hint="@string/address_two"
+                                android:layout_width="match_parent"
+                                android:fontFamily="@font/rubik_regular"
+                                style="@style/TextAppearance.AppCompat.Large"
+                                android:background="@null"
+                                android:text="@{model.agency.addressTwo}"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:inputType="textPostalAddress"
+                                android:layout_height="wrap_content"/>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <View android:layout_width="match_parent"
+                          android:layout_height="1dp"
+                          android:background="@color/Gray"/>
+
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                            android:orientation="vertical"
+                            android:layout_margin="@dimen/dp_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="match_parent"
+                                android:text="@string/address_city"
+                                android:textSize="@dimen/dp_12"
+                                android:fontFamily="@font/rubik_light"
+                                android:textAllCaps="true"
+                                android:layout_height="wrap_content"/>
+                        <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/edt_address_city"
+                                android:hint="@string/address_city"
+                                android:layout_width="match_parent"
+                                android:background="@null"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:fontFamily="@font/rubik_regular"
+                                android:text="@{model.agency.city}"
+                                style="@style/TextAppearance.AppCompat.Large"
+                                android:inputType="text"
+                                android:layout_height="wrap_content"/>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <View android:layout_width="match_parent"
+                          android:layout_height="1dp"
+                          android:background="@color/Gray"/>
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                            android:orientation="vertical"
+                            android:layout_marginStart="@dimen/dp_4"
+                            android:layout_marginEnd="@dimen/dp_4"
+                            android:layout_weight=".5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        <LinearLayout android:layout_width="match_parent"
+                                      android:layout_height="wrap_content"
+                                      android:orientation="horizontal">
+
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="0dp"
+                                    android:layout_weight=".5"
+                                    android:text="@string/str_state"
+                                    android:fontFamily="@font/rubik_light"
+                                    android:textAllCaps="true"
+                                    android:textSize="@dimen/dp_12"
+                                    android:layout_height="wrap_content"/>
+
+                            <View android:layout_width="1dp"
+                                  android:layout_height="match_parent"
+                                  android:background="@color/Gray"/>
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="0dp"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:layout_weight=".5"
+                                    android:text="@string/address_zip"
+                                    android:textAllCaps="true"
+                                    android:paddingLeft="@dimen/dp_4"
+                                    android:textSize="@dimen/dp_12"
+                                    android:fontFamily="@font/rubik_light"
+                                    android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                            <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight=".5"
+                                    android:layout_height="wrap_content">
+                                <androidx.appcompat.widget.AppCompatEditText
+                                        android:id="@+id/edt_state"
+                                        android:hint="@string/str_state"
+                                        android:textColor="@color/colorPrimaryDark"
+                                        android:paddingStart="@dimen/dp_4"
+                                        android:background="@null"
+                                        android:text="@{model.agency.state}"
+                                        android:layout_width="match_parent"
+                                        android:fontFamily="@font/rubik_regular"
+                                        style="@style/TextAppearance.AppCompat.Large"
+                                        android:layout_height="wrap_content" android:paddingLeft="@dimen/dp_4"/>
+
+
+                            </RelativeLayout>
+
+                            <View android:layout_width="1dp"
+                                  android:layout_height="match_parent"
+                                  android:background="@color/Gray"/>
+
+                            <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight=".5"
+                                    android:layout_height="wrap_content">
+
+                                <androidx.appcompat.widget.AppCompatEditText
+                                        android:id="@+id/edt_address_zip"
+                                        android:hint="@string/address_zip"
+                                        android:fontFamily="@font/rubik_regular"
+                                        style="@style/TextAppearance.AppCompat.Large"
+                                        android:layout_width="match_parent"
+                                        android:textColor="@color/colorPrimaryDark"
+                                        android:background="@null"
+                                        android:text="@{model.agency.zipcode}"
+                                        android:inputType="number"
+                                        android:layout_height="wrap_content"/>
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </LinearLayout>
+                <View android:layout_width="match_parent"
+                      android:layout_height="1dp"
+                      android:background="@color/Gray"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/PinkRoseLight"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_marginTop="@dimen/dp_32"
+                        android:fontFamily="@font/rubik_regular"
+                        android:text="@string/account_details"/>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:background="@color/LightGray"
+                        android:layout_marginTop="@dimen/dp_16"
+                        android:layout_height="wrap_content">
+                    <View android:layout_width="match_parent"
+                          android:layout_height="1dp"
+                          android:background="@color/Gray"/>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                            android:orientation="vertical"
+                            android:layout_margin="@dimen/dp_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="match_parent"
+                                android:text="@string/str_username"
+                                android:textSize="@dimen/dp_12"
+                                android:fontFamily="@font/rubik_light"
+                                android:textAllCaps="true"
+                                android:layout_height="wrap_content"/>
+                        <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/edt_user_name"
+                                android:text="@{model.username}"
+                                android:fontFamily="@font/rubik_regular"
+                                style="@style/TextAppearance.AppCompat.Large"
+                                android:hint="@string/str_username"
+                                android:layout_width="match_parent"
+                                android:background="@null"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:inputType="text"
+                                android:layout_height="wrap_content"/>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+<!--
+                    <View android:layout_width="match_parent"
+                          android:layout_height="1dp"
+                          android:background="@color/Gray"/>
+-->
+
+<!--
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                            android:orientation="vertical"
+                            android:layout_margin="@dimen/dp_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="match_parent"
+                                android:text="@string/password"
+                                android:textSize="@dimen/dp_12"
+                                android:fontFamily="@font/rubik_light"
+                                android:textAllCaps="true"
+                                android:layout_height="wrap_content"/>
+                        <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/edt_password"
+                                android:fontFamily="@font/rubik_regular"
+                                style="@style/TextAppearance.AppCompat.Large"
+                                android:hint="@string/password"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:layout_width="match_parent"
+                                android:background="@null"
+                                android:inputType="textPassword"
+                                android:layout_height="wrap_content"/>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+-->
+
+                    <View android:layout_width="match_parent"
+                          android:layout_height="1dp"
+                          android:background="@color/Gray"/>
+
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                            android:orientation="vertical"
+                            android:layout_margin="@dimen/dp_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="match_parent"
+                                android:text="@string/did"
+                                android:textSize="@dimen/dp_12"
+                                android:fontFamily="@font/rubik_light"
+                                android:textAllCaps="true"
+                                android:layout_height="wrap_content"/>
+                        <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/edt_did"
+                                android:fontFamily="@font/rubik_regular"
+                                android:textColor="@color/colorPrimaryDark"
+                                style="@style/TextAppearance.AppCompat.Large"
+                                android:hint="@string/did"
+                                android:text="@{model.did}"
+                                android:layout_width="match_parent"
+                                android:background="@null"
+                                android:layout_height="wrap_content"/>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <View android:layout_width="match_parent"
+                          android:layout_height="1dp"
+                          android:background="@color/Gray"/>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                            android:orientation="vertical"
+                            android:layout_marginStart="@dimen/dp_4"
+                            android:layout_marginEnd="@dimen/dp_4"
+                            android:layout_weight=".5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        <LinearLayout android:layout_width="match_parent"
+                                      android:layout_height="wrap_content"
+                                      android:orientation="horizontal">
+
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="0dp"
+                                    android:layout_weight=".5"
+                                    android:text="@string/str_status"
+                                    android:fontFamily="@font/rubik_light"
+                                    android:textAllCaps="true"
+                                    android:textSize="@dimen/dp_12"
+                                    android:layout_height="wrap_content"/>
+
+                            <View android:layout_width="1dp"
+                                  android:layout_height="match_parent"
+                                  android:background="@color/Gray"/>
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="0dp"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:layout_weight=".5"
+                                    android:text="@string/str_gender"
+                                    android:textAllCaps="true"
+                                    android:paddingLeft="@dimen/dp_4"
+                                    android:textSize="@dimen/dp_12"
+                                    android:fontFamily="@font/rubik_light"
+                                    android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                            <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight=".5"
+                                    android:layout_height="wrap_content">
+                                <androidx.appcompat.widget.AppCompatTextView
+                                        android:text="@string/inactive"
+                                        android:id="@+id/textStatus"
+                                        android:textColor="@color/colorPrimaryDark"
+                                        android:layout_centerVertical="true"
+                                        android:fontFamily="@font/rubik_regular"
+                                        style="@style/TextAppearance.AppCompat.Large"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"/>
+
+                                <androidx.appcompat.widget.SwitchCompat
+                                        android:layout_centerVertical="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_width="wrap_content"
+                                        android:theme="@style/SCBSwitch"
+                                        android:fontFamily="@font/rubik_regular"
+                                        style="@style/TextAppearance.AppCompat.Large"
+                                        android:id="@+id/switchStatus"
+                                        android:layout_height="wrap_content"/>
+
+                            </RelativeLayout>
+
+                            <View android:layout_width="1dp"
+                                  android:layout_height="match_parent"
+                                  android:background="@color/Gray"/>
+
+                            <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight=".5"
+                                    android:layout_height="wrap_content">
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                        android:id="@+id/tvGender"
+                                        android:hint="@string/please_select"
+                                        android:textColor="@color/colorPrimaryDark"
+                                        android:paddingStart="@dimen/dp_4"
+                                        android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                                        android:layout_width="match_parent"
+                                        android:text="@{model.gender}"
+                                        android:fontFamily="@font/rubik_regular"
+                                        style="@style/TextAppearance.AppCompat.Large"
+                                        android:layout_height="wrap_content" android:paddingLeft="@dimen/dp_4"/>
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                    <View android:layout_width="match_parent"
+                          android:layout_height="1dp"
+                          android:background="@color/Gray"/>
+
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                            android:orientation="vertical"
+                            android:layout_margin="@dimen/dp_4"
+                            android:id="@+id/llGroup"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="match_parent"
+                                android:text="@string/str_group"
+                                android:textSize="@dimen/dp_12"
+                                android:fontFamily="@font/rubik_light"
+                                android:textAllCaps="true"
+                                android:layout_height="wrap_content"/>
+                        <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tvGroup"
+                                android:hint="@string/please_select"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:fontFamily="@font/rubik_regular"
+                                style="@style/TextAppearance.AppCompat.Large"
+                                android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                    <View android:layout_width="match_parent"
+                          android:layout_height="1dp"
+                          android:background="@color/Gray"/>
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/PinkRoseLight"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_marginTop="@dimen/dp_32"
+                        android:fontFamily="@font/rubik_regular"
+                        android:text="@string/account_permsissions"/>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/dp_16"
+                        android:id="@+id/rv_menus"
+                        android:layout_height="wrap_content">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="@string/add_another"
+                          android:layout_gravity="center"
+                          android:textStyle="bold"
+                          android:id="@+id/tvAddAnother"
+                          android:padding="@dimen/dp_8"
+                          android:fontFamily="@font/rubik_regular"
+                          android:textColor="@color/colorPrimaryDark"/>
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_save"
+                        style="@style/BtnStyleBlack"
+                        android:layout_width="160dp"
+                        android:text="@string/btn_save"
+                        android:padding="@dimen/dp_16"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dp_8"
+                        android:background="@drawable/button_effect"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:layout_marginBottom="16dp"/>
+
+            </LinearLayout>
+
+
+        </ScrollView>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+    <RelativeLayout
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:gravity="center">
+
+        <FrameLayout android:layout_width="match_parent"
+                     android:background="@drawable/background"
+                     android:layout_alignParentBottom="true"
+                     android:layout_height="wrap_content"></FrameLayout>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_login_welcome"
+                android:text="@string/welcome_back"
+                android:fontFamily="@font/rubik_regular"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_32"
+                style="@style/TextStyleTitle"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_login_profile"
+                android:layout_width="@dimen/dp_74"
+                android:layout_height="@dimen/dp_74"
+                android:layout_below="@+id/txt_login_welcome"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_12"
+                android:src="@drawable/logo"/>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_below="@+id/img_login_profile"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/linearLayout"
+                android:layout_marginTop="@dimen/dp_56">
+
+            <View android:layout_width="match_parent"
+                  android:layout_height="1dp"
+                  android:background="@color/Gray"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txt_Input_login_user_Name"
+                    style="@style/InputTextStyle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt_login_username"
+                        android:hint="@string/username"
+                        android:inputType="textWebEmailAddress"
+                        android:fontFamily="@font/rubik_regular"
+                        android:imeOptions="actionDone"
+                        android:text="mobileapp"
+                        style="@style/EditTextStyle"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txt_Input_login_password"
+                    style="@style/InputTextStyle"
+                    android:background="@drawable/box_background">
+                <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt_login_password"
+                        android:hint="@string/password"
+                        android:fontFamily="@font/rubik_regular"
+                        android:inputType="textPassword"
+                        android:text="123456"
+                        android:imeOptions="actionDone"
+                        style="@style/EditTextStyle"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/cb_remember_me"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="@string/remember_me"
+                android:fontFamily="@font/rubik_regular"
+                android:layout_below="@+id/linearLayout"
+                app:layout_constraintTop_toTopOf="@+id/img_background"
+                app:layout_constraintBottom_toTopOf="@+id/txt_forgot_password"
+                android:padding="@dimen/dp_12"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_48"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_login"
+                style="@style/BtnStyleBlack"
+                android:layout_width="160dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="@string/btn_login"
+                android:layout_below="@+id/cb_remember_me"
+                android:padding="@dimen/dp_16"
+                android:textAllCaps="false"
+                android:fontFamily="@font/rubik_regular"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_16"/>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_forgot_password"
+                style="@style/TextStyleBlue"
+                android:fontFamily="@font/rubik_regular"
+                android:layout_below="@+id/btn_login"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="@string/forgot"
+                android:layout_marginTop="@dimen/dp_16"
+                android:layout_centerHorizontal="true"/>
+
+
+    </RelativeLayout>
+</ScrollView>

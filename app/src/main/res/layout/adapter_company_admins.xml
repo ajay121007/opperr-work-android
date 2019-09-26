@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable name="companyViewModel" type="com.expert.operrwork.view.adminstrative.companyAdmin.CompanyViewModel"/>
+        <variable name="companyData" type="com.expert.operrwork.data.model.response.companyAdmin.CompanyAdminResponse.ContentBean"/>
+    </data>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/dp_4"
+                    android:background="@drawable/background_line"
+                    android:layout_height="wrap_content">
+
+        <LinearLayout android:layout_width="@dimen/dp_56"
+                      android:gravity="center"
+                      android:id="@+id/linearLayoutId"
+                      android:orientation="vertical"
+                      android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:maxLines="1"
+                    android:text="@{`ID `+ companyData.company.licenseNumber}"
+                    android:layout_height="wrap_content"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/dp_48"
+                    android:src="@drawable/avatar"
+                    android:layout_marginTop="@dimen/dp_4"
+                    android:layout_gravity="center"
+                    android:layout_height="@dimen/dp_48"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_toLeftOf="@+id/imageButtonNext"
+                      android:orientation="vertical"
+                      android:id="@+id/linearLayoutData"
+                      android:layout_toRightOf="@+id/linearLayoutId"
+                      android:layout_marginLeft="@dimen/dp_8"
+                      android:layout_gravity="center"
+                      android:layout_height="wrap_content">
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:maxLines="1"
+                    android:text="@{companyData.company.createdByUsr}"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="@android:color/black"
+                    android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:maxLines="1"
+                    android:text="@{companyData.company.name}"
+                    android:layout_height="wrap_content"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:maxLines="1"
+                    android:text="@{companyData.company.email}"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <ImageButton android:layout_width="wrap_content"
+                     android:padding="@dimen/dp_16"
+                     android:backgroundTint="@color/Gray"
+                     android:id="@+id/imageButtonNext"
+                     android:background="@drawable/ic_arrow_right_black_24dp"
+                     android:layout_centerVertical="true"
+                     android:layout_alignParentRight="true"
+                     android:layout_gravity="center|right"
+                     android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</layout>

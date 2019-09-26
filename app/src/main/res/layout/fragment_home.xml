@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical" android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+            android:id="@+id/tvPath"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_8"
+            android:fontFamily="@font/rubik_regular"
+            android:textSize="@dimen/dp_14"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_16"
+            android:fontFamily="@font/rubik_regular"
+            android:text="@string/welcome"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/PinkRoseLight"
+            android:textStyle="bold"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_8"
+            android:fontFamily="@font/rubik_regular"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/PinkRoseLight"
+            android:textStyle="bold"/>
+
+    <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/lineChart"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/dp_28"
+            android:layout_marginRight="@dimen/dp_28"
+            android:layout_height="200dp"
+    />
+
+    <com.github.mikephil.charting.charts.PieChart
+            android:layout_width="match_parent"
+            android:id="@+id/pieChart"
+            android:layout_height="200dp"></com.github.mikephil.charting.charts.PieChart>
+
+</LinearLayout>

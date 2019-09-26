@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/ll_Operr_work"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dp_42"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_add_note_key"
+                style="@style/TextStyleTitle"
+                android:text="@string/add_a_note"
+                android:layout_marginBottom="@dimen/dp_42"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/edt_date_time_key"
+            style="@style/EditTextKeyNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/date_only_wed_note"/>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayoutCompat2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ll_Operr_work"
+            android:layout_marginBottom="8dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txt_Input_note_Name"
+            style="@style/InputTextStyle"
+            android:background="@drawable/box_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_add_a_note"
+                style="@style/EditTextStyle"
+                android:hint="@string/additional_note"
+                android:imeOptions="actionDone"
+                android:inputType="text"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </FrameLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:scaleType="fitXY"
+            android:src="@drawable/background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/linearLayoutCompat2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="@dimen/dp_24"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_add_a_note_submit"
+                style="@style/BtnStyleBlack"
+                android:layout_width="160dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:padding="@dimen/dp_16"
+                android:text="@string/btn_submit"
+                android:textAllCaps="false"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_add_a_note_cancel"
+                style="@style/BtnStyleBlack"
+                android:layout_width="160dp"
+                android:padding="@dimen/dp_16"
+                android:text="@string/btn_cancel"
+                android:textAllCaps="false"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.constraintlayout.widget.ConstraintLayout>

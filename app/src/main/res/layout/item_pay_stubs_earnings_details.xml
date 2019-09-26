@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_pay_stubs_earning_details_type"
+        style="@style/TextStyleItemDetails"
+        android:layout_width="@dimen/dp_0"
+        android:layout_weight="2.5"
+        android:gravity="start"
+        android:paddingStart="@dimen/dp_4"
+        android:paddingEnd="@dimen/dp_4"
+        android:text="@string/type"
+        android:textAllCaps="false" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_pay_stubs_earning_details_hr"
+        style="@style/TextStyleItemDetails"
+        android:layout_width="@dimen/dp_0"
+        android:layout_weight="1.5"
+        android:gravity="start"
+        android:paddingStart="@dimen/dp_4"
+        android:paddingEnd="@dimen/dp_4"
+        android:text="@string/hr"
+        android:textAllCaps="false" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_pay_stubs_earning_details_hrs"
+        style="@style/TextStyleItemDetails"
+        android:layout_width="@dimen/dp_0"
+        android:layout_weight="1.5"
+        android:gravity="center"
+        android:paddingStart="@dimen/dp_4"
+        android:paddingEnd="@dimen/dp_4"
+        android:text="@string/hrs"
+        android:textAllCaps="false" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_pay_stubs_earning_details_current"
+        style="@style/TextStyleItemDetails"
+        android:layout_width="@dimen/dp_0"
+        android:layout_weight="2"
+        android:paddingStart="@dimen/dp_4"
+        android:paddingEnd="@dimen/dp_4"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:text="@string/current"
+        android:textAllCaps="false" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_pay_stubs_earning_details_ytd"
+        style="@style/TextStyleItemDetails"
+        android:layout_width="@dimen/dp_0"
+        android:layout_weight="2"
+        android:paddingStart="@dimen/dp_4"
+        android:paddingEnd="@dimen/dp_4"
+        android:text="@string/ytd"
+        android:textAllCaps="false" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

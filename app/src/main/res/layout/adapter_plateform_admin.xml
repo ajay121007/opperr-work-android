@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable name="platformAdminViewModel" type="com.expert.operrwork.view.adminstrative.platformadmin.PlatformAdminViewModel"/>
+        <variable name="data" type="com.expert.operrwork.data.model.response.allplatformadmin.Content"/>
+    </data>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/dp_4"
+                    android:background="@drawable/background_line"
+                    android:layout_height="wrap_content">
+
+        <LinearLayout android:layout_width="@dimen/dp_56"
+                      android:gravity="center"
+                      android:id="@+id/linearLayoutId"
+                      android:orientation="vertical"
+                      android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:maxLines="1"
+                    android:text="@{`ID `+ data.id}"
+                    android:layout_height="wrap_content"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/dp_48"
+                    android:src="@drawable/avatar"
+                    android:layout_marginTop="@dimen/dp_4"
+                    android:layout_gravity="center"
+                    android:layout_height="@dimen/dp_48"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_toLeftOf="@+id/imageButtonNext"
+                      android:orientation="vertical"
+                      android:id="@+id/linearLayoutData"
+                      android:layout_toRightOf="@+id/linearLayoutId"
+                      android:layout_marginLeft="@dimen/dp_8"
+                      android:layout_gravity="center"
+                      android:layout_height="wrap_content">
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:maxLines="1"
+                    android:text="@{data.username}"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="@android:color/black"
+                    android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:maxLines="1"
+                    android:text="@{data.email}"
+                    android:layout_height="wrap_content"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:maxLines="1"
+                    android:text="@{data.phone}"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <ImageButton android:layout_width="wrap_content"
+                     android:padding="@dimen/dp_16"
+                     android:layout_marginTop="@dimen/dp_8"
+                     android:backgroundTint="@color/Gray"
+                     android:id="@+id/imageButtonEdit"
+                     android:background="@drawable/ic_edit_black_24dp"
+                     android:layout_centerVertical="true"
+                     android:layout_marginRight="@dimen/dp_8"
+                     android:layout_alignParentRight="true"
+                     android:layout_gravity="center|right"
+                     android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</layout>

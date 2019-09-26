@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_Company_News"
+                style="@style/TextStyleTitle"
+                android:layout_marginTop="@dimen/dp_32"
+                android:layout_marginBottom="@dimen/dp_32"
+                android:text="@string/company_news"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+                style="@style/ImgSquareSmall"
+                android:layout_gravity="center"
+                android:src="@drawable/logo"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+                style="@style/TextStyleTitle"
+                android:layout_marginTop="@dimen/dp_10"
+                android:gravity="center"
+                android:text="@string/clean_air_car_service_parking"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_update_news"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"
+                android:layout_margin="@dimen/dp_8"
+                tools:listitem="@layout/item_updates_news"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.core.widget.NestedScrollView>

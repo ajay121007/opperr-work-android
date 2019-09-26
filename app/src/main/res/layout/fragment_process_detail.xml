@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable name="model" type="com.expert.operrwork.data.model.response.getUserProcess.Data"/>
+    </data>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_marginTop="@dimen/dp_16"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/dp_14"
+                    android:fontFamily="@font/rubik_regular"
+                    android:layout_gravity="center"
+                    android:id="@+id/tvPath"
+                    android:layout_marginBottom="@dimen/dp_8"
+                    android:layout_marginTop="@dimen/dp_8"/>
+
+
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:layout_height="wrap_content">
+                <de.hdodenhof.circleimageview.CircleImageView
+                        android:src="@drawable/avatar"
+                        android:layout_gravity="center"
+                        android:layout_width="@dimen/dp_56"
+                        android:layout_height="@dimen/dp_56"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/dp_8"
+                        android:fontFamily="@font/rubik_regular"
+                        style="@style/TextAppearance.AppCompat.Large"
+                        android:textStyle="bold"
+                        android:text="@{model.createdByUsr}"
+                        android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:gravity="center"
+                    android:fontFamily="@font/rubik_regular"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/dp_8"
+                    android:layout_marginRight="@dimen/dp_12"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:layout_marginTop="@dimen/dp_12"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:background="@color/colorPrimary"
+                    android:text="@string/str_process_monitor_list_detail"
+                    android:layout_height="wrap_content"/>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:layout_marginRight="@dimen/dp_12"
+                    android:layout_height="match_parent">
+
+                <LinearLayout android:layout_width="@dimen/dp_0"
+                              android:layout_weight=".5"
+                              android:orientation="vertical"
+                              android:layout_height="wrap_content">
+                    <TextView
+                            android:text="@string/str_process"
+                            android:padding="@dimen/dp_4"
+                            android:textAllCaps="true"
+                            android:fontFamily="@font/rubik_regular"
+                            android:background="@drawable/background_line"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                    <TextView
+                            android:text="@string/str_started_by"
+                            android:padding="@dimen/dp_4"
+                            android:textAllCaps="true"
+                            android:fontFamily="@font/rubik_regular"
+                            android:background="@drawable/background_line"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                    <TextView
+                            android:padding="@dimen/dp_4"
+                            android:text="@string/detail"
+                            android:textAllCaps="true"
+                            android:fontFamily="@font/rubik_regular"
+                            android:background="@drawable/background_line"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                    <TextView
+                            android:text="@string/str_request_start_time"
+                            android:textAllCaps="true"
+                            android:padding="@dimen/dp_4"
+                            android:fontFamily="@font/rubik_regular"
+                            android:background="@drawable/background_line"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    <TextView
+                            android:text="@string/time_end"
+                            android:padding="@dimen/dp_4"
+                            android:fontFamily="@font/rubik_regular"
+                            android:textAllCaps="true"
+                            android:background="@drawable/background_line"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+                <LinearLayout
+                        android:layout_width="@dimen/dp_1"
+                        android:background="@color/Gray"
+                        android:layout_height="match_parent"></LinearLayout>
+                <LinearLayout
+                        android:layout_width="@dimen/dp_0"
+                        android:layout_weight=".5"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                    <TextView
+                            android:id="@+id/tv_id"
+                            android:padding="@dimen/dp_4"
+                            android:text="@{model.process}"
+                            android:fontFamily="@font/rubik_regular"
+                            android:background="@drawable/background_line"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                    <TextView
+                            android:id="@+id/tv_first_name"
+                            android:padding="@dimen/dp_4"
+                            android:text="@{model.startedByName}"
+                            android:fontFamily="@font/rubik_regular"
+                            android:background="@drawable/background_line"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                    <TextView
+                            android:id="@+id/tv_last_name"
+                            android:padding="@dimen/dp_4"
+                            android:text="@{model.details}"
+                            android:maxLines="1"
+                            android:fontFamily="@font/rubik_regular"
+                            android:background="@drawable/background_line"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                    <TextView
+                            android:id="@+id/tv_company"
+                            android:padding="@dimen/dp_4"
+                            app:dateFromtimeStamp="@{model.requestStartTime}"
+                            android:fontFamily="@font/rubik_regular"
+                            android:background="@drawable/background_line"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                    <TextView
+                            android:id="@+id/tv_gender"
+                            android:padding="@dimen/dp_4"
+                            app:dateFromtimeStamp="@{model.endTime}"
+                            android:fontFamily="@font/rubik_regular"
+                            android:background="@drawable/background_line"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</layout>

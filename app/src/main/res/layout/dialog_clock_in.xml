@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/dp_24">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dp_24"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_clock_in_title"
+                style="@style/TextStyleTitle"
+                android:gravity="center"
+                android:text="@string/msg_you_ve_Successfully"
+                android:textColor="@android:color/black" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_clock_in_msg"
+                style="@style/TextStyleSubTitle"
+                android:text="@string/msg_for_more_details" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:background="@color/Gray"
+                android:layout_marginTop="@dimen/dp_24"/>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:weightSum="2">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_clock_in_add_note"
+                    style="@style/TextStylePunchBlue"
+                    android:layout_weight="1"
+                    android:layout_width="@dimen/dp_0"
+                    android:text="@string/btn_add_note"
+                    android:background="@android:color/white"
+                    android:textColor="@color/TextColorBlue" />
+
+                <View
+                    android:layout_width="@dimen/dp_1"
+                    android:layout_height="match_parent"
+                    android:background="@color/Gray"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_clock_in_done"
+                    style="@style/TextStylePunchBlue"
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:text="@string/btn_done" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.cardview.widget.CardView>

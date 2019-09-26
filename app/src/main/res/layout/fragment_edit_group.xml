@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable name="model"
+                  type="com.expert.operrwork.data.model.groupDetailById.Data"/>
+    </data><LinearLayout
+        android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:fillViewport="true"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/dp_14"
+                    android:fontFamily="@font/rubik_regular"
+                    android:layout_gravity="center"
+                    android:id="@+id/tvPath"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:text="Home>Adminstrative"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="@color/PinkRoseLight"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:fontFamily="@font/rubik_regular"
+                    android:text="@string/str_edit_group"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/LightGray"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:layout_height="wrap_content">
+                <View android:layout_width="match_parent"
+                      android:layout_height="1dp"
+                      android:background="@color/Gray"/>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                        android:orientation="vertical"
+                        android:layout_margin="@dimen/dp_4"
+                        android:layout_width="match_parent"
+                        android:id="@+id/ll_group_name"
+                        android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:text="@string/group_name"
+                            android:textSize="@dimen/dp_12"
+                            android:fontFamily="@font/rubik_light"
+                            android:textAllCaps="true"
+                            android:layout_height="wrap_content"/>
+                    <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/edt_group_name"
+                            android:hint="@string/str_enter_group_name"
+                            android:layout_width="match_parent"
+                            android:background="@null"
+                            android:text="@{model.name}"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:fontFamily="@font/rubik_regular"
+                            style="@style/TextAppearance.AppCompat.Large"
+                            android:inputType="text"
+                            android:layout_height="wrap_content"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+                <View android:layout_width="match_parent"
+                      android:layout_height="1dp"
+                      android:background="@color/Gray"/>
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                        android:orientation="vertical"
+                        android:id="@+id/linearLayoutStatus"
+                        android:paddingBottom="@dimen/dp_8"
+                        android:layout_marginStart="@dimen/dp_4"
+                        android:layout_marginEnd="@dimen/dp_4"
+                        android:layout_weight=".5"
+                        android:paddingTop="@dimen/dp_8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:orientation="horizontal">
+
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="0dp"
+                                android:layout_weight=".5"
+                                android:paddingStart="@dimen/dp_4"
+                                android:paddingEnd="@dimen/dp_4"
+                                android:text="@string/str_status"
+                                android:fontFamily="@font/rubik_light"
+                                android:textAllCaps="true"
+                                android:textSize="@dimen/dp_12"
+                                android:layout_height="wrap_content"/>
+
+                        <View android:layout_width="1dp"
+                              android:layout_height="match_parent"
+                              android:background="@color/Gray"/>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="0dp"
+                                android:layout_weight=".5"
+                                android:paddingStart="@dimen/dp_4"
+                                android:paddingEnd="@dimen/dp_4"
+                                android:text="@string/str_admins"
+                                android:textAllCaps="true"
+                                android:textSize="@dimen/dp_12"
+                                android:fontFamily="@font/rubik_light"
+                                android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                        <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_weight=".5"
+                                android:paddingStart="@dimen/dp_4"
+                                android:paddingEnd="@dimen/dp_4"
+                                android:layout_height="wrap_content">
+                            <androidx.appcompat.widget.AppCompatTextView
+                                    android:text="@string/inactive"
+                                    android:id="@+id/textStatus"
+                                    android:layout_centerVertical="true"
+                                    android:fontFamily="@font/rubik_regular"
+                                    style="@style/TextAppearance.AppCompat.Large"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                            <androidx.appcompat.widget.SwitchCompat
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_width="wrap_content"
+                                    android:theme="@style/SCBSwitch"
+                                    android:fontFamily="@font/rubik_regular"
+                                    style="@style/TextAppearance.AppCompat.Large"
+                                    android:id="@+id/switchStatus"
+                                    android:checked="false"
+                                    android:layout_height="wrap_content"/>
+
+                        </RelativeLayout>
+
+                        <View android:layout_width="1dp"
+                              android:layout_height="match_parent"
+                              android:background="@color/Gray"/>
+
+                        <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_weight=".5"
+                                android:paddingStart="@dimen/dp_4"
+                                android:paddingEnd="@dimen/dp_4"
+                                android:layout_height="wrap_content">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/tvAdmins"
+                                    android:fontFamily="@font/rubik_regular"
+                                    style="@style/TextAppearance.AppCompat.Large"
+                                    android:hint="@string/choose"
+                                    android:layout_alignParentRight="true"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <View android:layout_width="match_parent"
+                      android:layout_height="1dp"
+                      android:background="@color/Gray"/>
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="@color/PinkRoseLight"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:fontFamily="@font/rubik_regular"
+                    android:text="@string/account_permission"/>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_menus"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:layout_height="wrap_content">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="@string/add_another"
+                      android:layout_gravity="center"
+                      android:textStyle="bold"
+                      android:id="@+id/tvAddAnother"
+                      android:padding="@dimen/dp_8"
+                      android:fontFamily="@font/rubik_regular"
+                      android:textColor="@color/colorPrimaryDark"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_add"
+                    style="@style/BtnStyleBlack"
+                    android:layout_width="160dp"
+                    android:text="@string/btn_save"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:padding="@dimen/dp_16"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button_effect"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="16dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+</layout>

@@ -1,0 +1,562 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">OperrWork</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_qrCode">QR Code</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="error_internet_connection_common" tools:ignore="ExtraTranslation">Please check internet connection!</string>
+
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="choose_themes">choose themes</string>
+    <string name="choose_options">Choose Options</string>
+    <string name="request_for_photos">Request For Photos</string>
+
+    <string name="about_us">About us</string>
+    <string name="contact_us">Contact us</string>
+
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="demo_phone_number">+1 (123) 456–7890</string>
+    <string name="demo_ssn">xxx-xx-xxxx</string>
+    <string name="demo_dept_class">xxxx</string>
+    <string name="demo_check_no">--</string>
+    <string name="demo_full_time">Full Time</string>
+    <string name="submit">Submit</string>
+
+    <string name="sec">Secs</string>
+    <string name="min">Mins</string>
+    <string name="day">Days</string>
+    <string name="hours">Hours</string>
+
+    <string name="_0">0</string>
+    <string name="_00">00</string>
+    <string name="_59">59</string>
+    <string name="_01">01</string>
+
+    <!--DialogUtils-->
+    <string name="dialog_util_common_no">NO</string>
+    <string name="dialog_util_common_ok">OK</string>
+    <string name="dialog_util_common_yes">YES</string>
+    <string name="dialog_util_common_alert">Alert</string>
+    <string name="dialog_util_common_warning">Warning</string>
+    <string name="dialog_util_common_title_remind">Remind</string>
+    <string name="dialog_util_common_remind_again">REMIND AGAIN</string>
+    <string name="dialog_util_common_cancel" tools:ignore="ButtonCase">CANCEL</string>
+
+    <!--Api Create user responses-->
+    <string name="status_422">Invalid data</string>
+    <string name="status_500">Internal server error</string>
+    <string name="status_400">Invalid Email password </string>
+    <string name="status_409">CONFLICT, User data existed</string>
+    <string name="status_404">email or username does not exists</string>
+    <string name="status_423">LOCKED, The User existed but status inactivated</string>
+    <string name="status_201">CREATED User created successfully now you can login</string>
+
+    <!--userAccess-->
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="last_name">Last Name</string>
+    <string name="first_name">First Name</string>
+    <string name="department">Department</string>
+    <string name="date_of_birth">Date Of Birth</string>
+    <string name="account_email_address">Account Email Address</string>
+
+    <!--TextViewTitle-->
+    <string name="in">In</string>
+    <string name="out">Out</string>
+    <string name="hr">$/HR</string>
+    <string name="hrs">HRS</string>
+    <string name="ytd">YTD</string>
+    <string name="mcwh">MCWH</string>
+    <string name="sswh">SSWH</string>
+    <string name="fitw">FITW</string>
+    <string name="type">Type</string>
+    <string name="menu">Menu</string>
+    <string name="total">Total</string>
+    <string name="taxes">Taxes</string>
+    <string name="notes">Notes</string>
+    <string name="review">Review</string>
+    <string name="net_pay">NetPay</string>
+    <string name="holiday">Holiday</string>
+    <string name="current">Current</string>
+    <string name="payment">Payment</string>
+    <string name="earning">Earning</string>
+    <string name="earnings">Earnings</string>
+    <string name="minus_er">Minus ER</string>
+    <string name="add_note">Add Note</string>
+    <string name="jone_doe">Jone Doe</string>
+    <string name="optional">Optional</string>
+    <string name="end_date">End Date</string>
+    <string name="sub_total">SubTotal</string>
+    <string name="vacation">Vacation</string>
+    <string name="marketing">Marketing</string>
+    <string name="end_notice">End Notice</string>
+    <string name="sick_leave">Sick Leave</string>
+    <string name="start_date">Start Date</string>
+    <string name="time_punch">Time Punch</string>
+    <string name="add_a_note">Add a Note</string>
+    <string name="my_history">My History</string>
+    <string name="my_off_days">My Off Days</string>
+    <string name="total_wages">Total Wages</string>
+    <string name="my_scan_key">My Scan Key</string>
+    <string name="jode_email">jode@operr.com</string>
+    <string name="best_regards">Best Regards,</string>
+    <string name="company_news">Company News</string>
+    <string name="welcome_back">Welcome Back!</string>
+    <string name="my_details">Profile Details</string>
+    <string name="off_days_used">Off Days Used</string>
+    <string name="vacation_days">Vacation Days</string>
+    <string name="optional_brackets">(Optional)</string>
+    <string name="forgotten">Forgotten Password</string>
+    <string name="general_manager">General Manager</string>
+    <string name="additional_note">Additional Note</string>
+    <string name="use_Touch_Id">Use Touch Id Login</string>
+    <string name="profile_details">Profile Details</string>
+    <string name="add_profile_image">Add Profile Image</string>
+    <string name="specify_department">Specify Department</string>
+    <string name="history_of_off_days">History of Off Days</string>
+    <string name="create_employee_pin">Create Employee PIN</string>
+    <string name="company_policy">Company Policy Agreement</string>
+    <string name="marketing_supervisor">Marketing Supervisor</string>
+    <string name="specify_date_time">Specify Date &amp; Time</string>
+    <string name="Remaining_available_days">Remaining Available Days</string>
+    <string name="clean_air_car_service_parking">Clean Air Car Service \n &amp; Parking Corporation</string>
+
+
+    <!--TextViewWithColon-->
+    <string name="to_colon">To:</string>
+    <string name="ot_colon">OT:</string>
+    <string name="ssn_colon">SSN:</string>
+    <string name="date_colon">Date:</string>
+    <string name="name_colon">Name:</string>
+    <string name="type_colon">Type:</string>
+    <string name="from_colon">From:</string>
+    <string name="note_colon">Note:</string>
+    <string name="topic_colon">Topic:</string>
+    <string name="email_colon">Email:</string>
+    <string name="total_colon">Total:</string>
+    <string name="status_colon">Status:</string>
+    <string name="number_colon">Number:</string>
+    <string name="address_colon">Address:</string>
+    <string name="position_colon">Position:</string>
+    <string name="dept_class_colon">Dept/Class:</string>
+    <string name="department_colon">Department:</string>
+    <string name="check_number_colon">Check No:</string>
+    <string name="select_time_colon">Select Time:</string>
+    <string name="phone_number_colon">Phone Number:</string>
+    <string name="employee_name_colon">Employee Name:</string>
+    <string name="please_select_colon">Please Select:</string>
+    <string name="full_part_time_colon">Full/Part Time:</string>
+    <string name="last_punch_out_colon">Last punched Out:</string>
+
+    <!--TextViewClickable-->
+    <string name="forgot">Forgot Your Password ?</string>
+    <string name="skip_this_step">Skip This Step</string>
+
+    <!--Message-->
+    <string name="msg_you_ve_Successfully">You\'ve Successfully\n clocked in</string>
+    <string name="msg_for_more_details">For more details go to time sheet.</string>
+    <string name="msg_note_need">Note: need to go home early because of the bad weather.</string>
+    <string name="msg_building_rules_regarding">Building Rules Regarding Smoking and marijuana.</string>
+    <string name="msg_forgotten">Please enter your email address to begin the recovery process.</string>
+    <string name="msg_i_had_met_client">I had met clients this morning before coming to the office.</string>
+    <string name="msg_tap_on_the_qr">Tap on the QR code and hold your tab for a few seconds to save.</string>
+    <string name="msg_lift_and_rest">Lift and rest the edge of your finger in the Home button repeatedly.</string>
+    <string name="msg_there_will_be_a_mandatory">There will be a mandatory meeting at 4:00pm with marketing Team.</string>
+    <string name="msg_please_sign_your_name">Please sign your name on the line. Tap and hold on the signature to edit or reset your signature.</string>
+    <string name="msg_lorem_ipsum">Lorem ipsum dolor sit amet, pro eu vulputate sadipscing conclusionemque. An per numquam facilis, aperiri contentiones sit cu. Has illud labores ex, cu doctus scripta quaerendum qui. Ad vim modus aperiam omittantur, vis te eruditi legendos incorrupte, ut his justo copiosae euripidis. Et melius alienum persequeris est, sit nibh soleat cu.</string>
+    <string name="msg_press_back_to_exit">Press back again to exit</string>
+    <string name="msg_note_added_successful">Note Added Successful</string>
+    <string name="msg_already_open">Screen Already Open</string>
+    <string name="msg_log_out">Are you sure you want to Log Out ?</string>
+    <string name="msg_trip_to_san">Trip to San Diego</string>
+
+    <!--Button-->
+    <string name="btn_done">Done</string>
+    <string name="btn_edit">Edit</string>
+    <string name="btn_save">Save</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_clear">Clear</string>
+    <string name="btn_accept">Accept</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_submit">Submit</string>
+    <string name="btn_set_news">Set News</string>
+    <string name="btn_continue">Continue</string>
+    <string name="btn_register">Register</string>
+    <string name="btn_punch_in">Punch In</string>
+    <string name="btn_add_note">Add Note</string>
+    <string name="btn_create_content">Create Content</string>
+    <string name="btn_days_available">Days Available</string>
+    <string name="btn_turn_off_notifications">Turn Off Notifications</string>
+
+    <!--ToolBar-->
+    <string name="tb_updates">Updates</string>
+    <string name="tb_pay_stubs">Pay Stubs</string>
+    <string name="tb_app_login">App Login</string>
+    <string name="tb_time_sheet">TimeSheet</string>
+    <string name="tb_clock_in">Clock In</string>
+    <string name="tb_hello_username">Hello</string>
+    <string name="tb_account_help">Account Help</string>
+    <string name="tb_edit_signature">Edit Signature</string>
+    <string name="tb_reset_pass_code">Reset Passcode</string>
+    <string name="tb_request_off_days">Request Off Days</string>
+    <string name="tb_register_employee">Register Employee</string>
+    <string name="tb_my_employee_profile">My Employee Profile</string>
+
+    <!--CheckBox-->
+    <string name="remember_me">Remember Me</string>
+    <string name="i_agree_term">I agree to terms &amp; conditions</string>
+
+    <!--DemoDateTime-->
+    <string name="date_end">End Date</string>
+    <string name="date_start">Start Date</string>
+    <string name="date_mon">Mon 01/01/19</string>
+    <string name="date_wed">Wed 03/12/19 9:25 AM</string>
+    <string name="date_tue">Tues 03 / 11 / 19 </string>
+    <string name="date_only">03/20/19</string>
+    <string name="date_only_wed">Wed 03 / 12 / 2019</string>
+    <string name="date_only_wed_note">Wed 03 / 12 / 2019 \n 9:25 AM</string>
+    <string name="date_mon_april">Monday April 25,2019</string>
+    <string name="date_january">Date: 01/01/19 – 01/07/19 </string>
+
+    <!--DemoTime-->
+    <string name="time_hrs">Hrs</string>
+    <string name="time_min">Min</string>
+    <string name="time_sec">Sec</string>
+    <string name="time_wed">9:25 AM</string>
+    <string name="time_10_30">10:30 AM</string>
+    <string name="time_tue">5:30 PM</string>
+    <string name="time_hours">Hours</string>
+    <string name="time_end">End Time</string>
+    <string name="time_minutes">Minutes</string>
+    <string name="time_seconds">Seconds</string>
+    <string name="time_start">Start Time</string>
+    <string name="time_total">Total: 6 hrs 0 min</string>
+    <string name="time_total_hours">Total: 40.00 Hrs</string>
+
+    <!--DemoAddress-->
+    <string name="address_city">City</string>
+    <string name="address_area">Area</string>
+    <string name="address_country">Country</string>
+    <string name="address_pin_code">Pincode</string>
+    <string name="address_state">State/Regions</string>
+    <string name="address_first_line">First Line Address</string>
+    <string name="address_second_line">Second Line Address</string>
+    <string name="address_130_30_31st">130 30 31st,Flushing,NY 11354 \n Tel. 1–178–460–0888</string>
+
+    <!--Days-->
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+
+    <!--Months-->
+    <string name="january">January</string>
+    <string name="february">February</string>
+    <string name="march">March</string>
+    <string name="april">April</string>
+    <string name="may">May</string>
+    <string name="june">June</string>
+    <string name="july">July</string>
+    <string name="august">August</string>
+    <string name="september">September</string>
+    <string name="october">October</string>
+    <string name="november">November</string>
+    <string name="december">December</string>
+    <string name="operr">Operr</string>
+    <string name="work">Work</string>
+
+    <!--Dashboard-->
+    <string name="dashboard_profile">Profile</string>
+    <string name="dashboard_clock">Clock In</string>
+    <string name="dashboard_time_sheet">TimeSheet</string>
+    <string name="dashboard_pay">Pay Stubs</string>
+    <string name="dashboard_request">Request Off Time</string>
+    <string name="dashboard_overtime">Overtime</string>
+    <string name="dashboard_todo">To Do</string>
+
+    <!--Adminstrative-->
+    <string name="adminstrative_platform_admin">Platform Admin</string>
+    <string name="adminstrative_company_admin">Company Admin</string>
+    <string name="adminstrative_agency_admin">Agency Admin</string>
+    <string name="adminstrative_groups">Groups</string>
+    <string name="adminstrative_process_monitor">Process Monitor</string>
+
+
+    <!--Operation-->
+    <string name="operation_company">Company</string>
+    <string name="operation_agency">Agency</string>
+    <string name="operation_department">Department</string>
+    <string name="operation_position">Position</string>
+    <string name="operation_content">Content</string>
+
+    <!--SideMenu-->
+    <string name="side_menu_Adminstrative">Adminstrative</string>
+    <string name="side_menu_Logout">Logout</string>
+
+
+    <!--RequestDayOffMenu-->
+    <string name="Days_Available">Days Available</string>
+    <string name="Days_3">3 Days </string>
+    <string name="u00b7">·</string>
+    <string name="_1">1</string>
+    <string name="content">Content</string>
+    <string name="str_dashboard">Dashboard</string>
+    <string name="error_valid_email">Please enter valid E-mail</string>
+    <string name="tb_home">Home</string>
+    <string name="str_admininstrative">Adminstrative</string>
+    <string name="str_filter_agency_admins">Filter Agency Admins</string>
+    <string name="str_company">Company</string>
+    <string name="str_agency">Agency</string>
+    <string name="str_created_by">Created By</string>
+    <string name="str_status">Status</string>
+    <string name="inactive">INACTIVE</string>
+    <string name="str_something_wrong">Something went Wrong</string>
+    <string name="str_show_company_admins">Show Company Admins</string>
+    <string name="str_select_status">Select Status</string>
+    <string name="upload_new_picture">Upload New Picture</string>
+    <string name="str_company_edit">Editing Company Admin</string>
+    <string name="str_platform_edit">Editing Platform Admin</string>
+    <string name="str_group_edit">Editing Group</string>
+    <string name="str_state">State</string>
+    <string name="select_status_first">Select Status First</string>
+    <string name="str_add_company_admin">Add Company Admin</string>
+    <string name="str_agency_admins">Agency Admins</string>
+    <string name="str_agency_admin_details">Agency Admin Details</string>
+    <string name="str_id">ID</string>
+    <string name="str_first_name">FIRST NAME</string>
+    <string name="str_last_name">LAST NAME</string>
+    <string name="str_gender">Gender</string>
+    <string name="str_email">Email</string>
+    <string name="str_phone">Phone</string>
+    <string name="str_admin_type">Admin Type</string>
+    <string name="str_username">Username</string>
+    <string name="str_add_agency_admin">Add Agency Admin</string>
+    <string name="str_bring_employee">Bring Employee</string>
+    <string name="middle_name">Middle Name</string>
+    <string name="select_company">Select Company</string>
+    <string name="select_agency">Select Agency</string>
+    <string name="select_login_name">Please Select Login Name</string>
+    <string name="select_password_expiry">Please Select Password Expiry</string>
+    <string name="pick_start_time">Pick Start Time for</string>
+    <string name="pick_end_time">Pick End Time for</string>
+    <string name="enter_ip_address">Enter IP Address</string>
+    <string name="select_company_first">Select company id first.</string>
+    <string name="browse">BROWSE</string>
+    <string name="str_add_admin">ADD ADMIN</string>
+    <string name="str_settings">SETTINGS</string>
+    <string name="str_edit_agency_admin">Edit Agency Admin</string>
+    <string name="str_agency_admin_edit">Edit Agency Admin</string>
+    <string name="please_select">Please Select</string>
+    <string name="str_enter_first_name">Enter First Name</string>
+    <string name="str_middle_name">Middle Name</string>
+    <string name="str_enter_middle_name">Enter Middle Name</string>
+    <string name="str_enter_last_name">Enter Last Name</string>
+    <string name="str_enter_email">Enter Email</string>
+    <string name="str_enter_phone">Enter Phone</string>
+    <string name="secondary_phone_number">Secondary Phone</string>
+    <string name="address_one">Address One</string>
+    <string name="str_address_one">Address One</string>
+    <string name="address_two">Address Two</string>
+    <string name="address_zip">Zip Code</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="did">Did</string>
+    <string name="str_group">Group</string>
+    <string name="active">Active</string>
+    <string name="str_login_name">Login Name</string>
+    <string name="change_password">Change Password</string>
+    <string name="renew_password_every">Renew password every</string>
+    <string name="override_ot_limit">Override OT limit</string>
+    <string name="sms">SMS</string>
+    <string name="btn_search">Search</string>
+    <string name="btn_reset">Reset</string>
+    <string name="str_address">Address</string>
+    <string name="str_show_platform_admins">Show All Platform Admin</string>
+    <string name="str_add_platform_admin">Add Platform Admin</string>
+    <string name="str_edit_platform_admin">Edit Platform Admin</string>
+    <string name="str_select_agency">Select Agency</string>
+    <string name="group_name">Group Name</string>
+    <string name="str_enter_group_name">Enter Group Name</string>
+    <string name="str_admins">Admins</string>
+    <string name="str_show_groups">Show Groups</string>
+    <string name="str_add_groups">Add Group</string>
+    <string name="choose">Choose</string>
+    <string name="show">Show</string>
+    <string name="add">Add</string>
+    <string name="edit">Edit</string>
+    <string name="browse_small">Browse</string>
+    <string name="detail">Detail</string>
+    <string name="browse_agency_admin">Browse Agency Admin</string>
+    <string name="edit_agency_admin">Edit Agency Admin</string>
+    <string name="str_agency_admin_settings">Agency Admin Settings</string>
+    <string name="str_edit_company_admin">Edit Company Admin</string>
+    <string name="str_show_company_admin">Show Company Admins</string>
+    <string name="filter_agency_admin">Filter Agency Admins</string>
+    <string name="filter_company_admin">Filter Company Admins</string>
+    <string name="str_company_admins">Company Admins</string>
+    <string name="filter_groups">Filter Groups</string>
+    <string name="str_started_by">Started By</string>
+    <string name="str_date_range">Date Range</string>
+    <string name="str_select_date">Select Date</string>
+    <string name="str_duration">Duration</string>
+    <string name="str_enter_duration">Enter Duration</string>
+    <string name="str_from_date">From Date</string>
+    <string name="str_to_date">To Date</string>
+    <string name="filter_process_monitor">Filter Process Monitors</string>
+    <string name="process_monitors">Process Monitors</string>
+    <string name="str_show_process_monitors">Show Process Monitors</string>
+    <string name="str_operation">Operation</string>
+    <string name="filter_events">Filter Events</string>
+    <string name="matching_process_monitors">Matching Process Monitor</string>
+    <string name="str_group_list">Groups List</string>
+    <string name="str_matching_groups">Matching Groups</string>
+    <string name="managing_groups">Managing Groups</string>
+    <string name="str_add_new_group">Add New Group</string>
+    <string name="account_permission">Account Permissions</string>
+    <string name="str_edit_group">Edit Group</string>
+    <string name="company_admin_list">Company Admin List</string>
+    <string name="matching_company_admin">Matching Company Admin</string>
+    <string name="str_add_new_company_admin">Add New Company Admin</string>
+    <string name="str_company_admin_details">Company Admin Details</string>
+    <string name="str_process_monitor_list_detail">Process Monitor List Details</string>
+    <string name="str_process">Process</string>
+    <string name="str_request_start_time">Request Start Time</string>
+    <string name="str_platform_admin_list">Platform Admin List</string>
+    <string name="account_details">Account Details</string>
+    <string name="account_permsissions">Account Permissions</string>
+    <string name="password_settings">Password Settings</string>
+    <string name="notification_settings">Notification Settings</string>
+    <string name="password_expiry">PASSWORD EXPIRY</string>
+    <string name="notify_me_status">Notify me of any status changes</string>
+    <string name="str_sms">SMS</string>
+    <string name="privacy_security">Privacy &amp; Security</string>
+    <string name="restrict_ip_access">Restrict Access by IP Filtering</string>
+    <string name="restrict_time_filter">Restrict Access by Time FIltering</string>
+    <string name="add_another">[+] Add Menu Items</string>
+    <string name="ip_restricted">IP RESTRICTED</string>
+    <string name="please_select_company">Please select company first</string>
+    <string name="please_select_agency">Please select agency first</string>
+    <string name="empty_first_name">Empty First Name</string>
+    <string name="empty_last_name">Empty Last Name</string>
+    <string name="empty_email">Empty Email</string>
+    <string name="select_gender">Select Gender</string>
+    <string name="empty_address">Empty Address</string>
+    <string name="select_admin_type">Select Admin Type</string>
+    <string name="empty_user_name">Empty UserName</string>
+    <string name="empty_password">Empty Password</string>
+    <string name="invalid_password">Invalid Password</string>
+    <string name="password_did_not_match">Password did\'t match.</string>
+    <string name="password_must">Password must be greater than Six Character.</string>
+    <string name="no_group">No Group !</string>
+    <string name="empty_group_name">Empty Group Name</string>
+    <string name="todo_list">To Do List</string>
+    <string name="overtime_search">Overtime Search</string>
+    <string name="str_dashboard_view">Dashboard View</string>
+    <string name="select_dashboard_view">Select Dashboard View</string>
+    <string name="str_week_end_date">Week End Date</string>
+    <string name="str_department">Department</string>
+    <string name="str_group_by">Group By</string>
+    <string name="str_employee">Employee</string>
+    <string name="summary_totals">Summary Totals</string>
+    <string name="str_total_emp">Total Employee</string>
+    <string name="str_total_hrs">Total Hours</string>
+    <string name="str_total_ot">Total O.T.</string>
+    <string name="matching_departments">Matching Departments</string>
+    <string name="str_login">Login</string>
+    <string name="welcome">Welcome</string>
+    <string name="next">Next</string>
+    <string name="select_days">Please Select Day</string>
+    <!--String Array-->
+    <string-array name="dashboard">
+        <item>Profile</item>
+        <item>Clock In</item>
+        <item>TimeSheet</item>
+        <item>Pay Stubs</item>
+        <item>Request Off Time</item>
+    </string-array>
+
+
+    <!--String Array-->
+    <string-array name="adminstrative">
+        <item>Platform Admin</item>
+        <item>Company Admin</item>
+        <item>Agency Admin</item>
+        <item>Groups</item>
+        <item>Process Monitor</item>
+    </string-array>
+
+    <!--String Array-->
+    <string-array name="operation">
+        <item>Comapny</item>
+        <item>Agency</item>
+        <item>Department</item>
+        <item>Position</item>
+        <item>Content</item>
+    </string-array>
+
+    <!--String Array-->
+    <string-array name="dashboard_option">
+        <item>OverTime</item>
+        <item>To Do List</item>
+    </string-array>
+
+    <string-array name="request_off_menu">
+        <item>Days Available</item>
+        <item>2019</item>
+        <item>2018</item>
+        <item>2017</item>
+        <item>2016</item>
+    </string-array>
+
+    <string-array name="weekName">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+
+    <string-array name="side_menu">
+        <item>Dashboard</item>
+        <item>Operation</item>
+        <item>Employee</item>
+        <item>Adminstrative</item>
+        <item>Member</item>
+        <item>CRM</item>
+    </string-array>
+
+    <string-array name="Department">
+        <item>Choose Department</item>
+        <item>Cab</item>
+        <item>Technical</item>
+        <item>CustomerComplainer</item>
+        <item>Terms &amp; Conditions</item>
+    </string-array>
+
+    <string-array name="Empty">
+        <item></item>
+    </string-array>
+    <string-array name="days">
+        <item>@string/monday</item>
+        <item>@string/tuesday</item>
+        <item>@string/wednesday</item>
+        <item>@string/thursday</item>
+        <item>@string/friday</item>
+        <item>@string/saturday</item>
+        <item>@string/sunday</item>
+    </string-array>
+
+
+</resources>

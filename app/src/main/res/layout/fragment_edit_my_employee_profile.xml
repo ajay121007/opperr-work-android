@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/ll_Operr_work"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_32"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_profile_details"
+                style="@style/TextStyleTitle"
+                android:layout_width="wrap_content"
+                android:text="@string/profile_details"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_user_profile"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="@dimen/dp_12"
+                android:layout_marginBottom="@dimen/dp_32"
+                android:scaleType="fitXY"
+                android:src="@drawable/logo" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/ll_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dp_20"
+            app:layout_constraintBottom_toTopOf="@+id/btn_edit_profile_save"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ll_Operr_work"
+            app:layout_constraintVertical_bias="0.0">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/Gray" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_4"
+                android:layout_marginBottom="@dimen/dp_4"
+                android:gravity="center">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txt_Input_User_Name"
+                    style="@style/InputTextStyle">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt_user_name"
+                        style="@style/EditTextStyle"
+                        android:hint="@string/username"
+                        android:inputType="text"
+                        android:paddingStart="@dimen/dp_10"
+                        android:paddingLeft="@dimen/dp_10"
+                        tools:ignore="RtlSymmetry" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txt_Input_First_Name"
+                style="@style/InputTextStyle"
+                android:background="@drawable/box_background">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_first_name"
+                    style="@style/EditTextStyle"
+                    android:hint="@string/first_name"
+                    android:inputType="text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txt_Input_Last_Name"
+                style="@style/InputTextStyle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_last_name"
+                    style="@style/EditTextStyle"
+                    android:hint="@string/last_name"
+                    android:inputType="text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txt_Input_note_Name"
+                style="@style/InputTextStyle"
+                android:background="@drawable/box_background">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_add_a_note"
+                    style="@style/EditTextStyle"
+                    android:hint="@string/date_of_birth"
+                    android:imeOptions="actionDone"
+                    android:inputType="date" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/Department"
+                android:paddingStart="@dimen/dp_16"
+                android:paddingLeft="@dimen/dp_16"
+                android:paddingTop="@dimen/dp_24"
+                android:paddingBottom="@dimen/dp_24"
+                app:backgroundTint="#CBCBCB"
+                tools:ignore="RtlSymmetry" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_edit_profile_save"
+            style="@style/BtnStyleBlack"
+            android:layout_width="160dp"
+            android:layout_marginBottom="32dp"
+            android:padding="@dimen/dp_16"
+            android:text="@string/btn_save"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:scaleType="fitXY"
+            android:src="@drawable/background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ll_edit_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

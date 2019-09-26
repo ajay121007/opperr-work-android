@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/ll_Operr_work"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dp_42"
+            android:paddingBottom="@dimen/dp_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_dispute_time_sheet"
+                style="@style/TextStyleTitle"
+                android:text="@string/my_history" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_time_sheet_person_name"
+                style="@style/TextStyleTitle"
+                android:layout_marginTop="@dimen/dp_12"
+                android:text="@string/jone_doe"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_time_sheet_person_post"
+                style="@style/TextStyleTitle"
+                android:layout_marginTop="@dimen/dp_4"
+                android:text="@string/marketing_supervisor"
+                android:textColor="@color/colorPrimary" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="@style/BackgroundPurple"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_32"
+                android:layout_marginTop="@dimen/dp_24"
+                android:layout_marginEnd="@dimen/dp_32"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_month"
+                    style="@style/TextStylePurple"
+                    android:text="@string/january"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_date"
+                    style="@style/TextStylePurple"
+                    android:layout_marginTop="@dimen/dp_4"
+                    android:text="@string/date_january" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_hours"
+                    style="@style/TextStylePurple"
+                    android:layout_marginTop="@dimen/dp_4"
+                    android:text="@string/time_total_hours" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_dispute_time"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dp_12"
+            android:layout_marginEnd="@dimen/dp_12"
+            android:overScrollMode="never"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ll_Operr_work" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

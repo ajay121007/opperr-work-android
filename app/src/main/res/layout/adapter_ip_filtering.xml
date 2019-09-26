@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:orientation="vertical"
+              android:background="@color/LightGray"
+              android:layout_height="wrap_content">
+    <View android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/Gray"/>
+
+
+    <LinearLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+            android:orientation="vertical"
+            android:layout_margin="@dimen/dp_8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:text="@string/ip_restricted"
+                android:fontFamily="@font/rubik_light"
+                android:textAllCaps="true"
+                android:textSize="@dimen/dp_12"
+                android:layout_height="wrap_content"/>
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_email"
+                    android:hint="@string/email"
+                    android:layout_width="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:background="@null"
+                    android:fontFamily="@font/rubik_regular"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:inputType="text"
+                    android:text="192.162."
+                    android:layout_height="wrap_content"/>
+
+
+            <androidx.appcompat.widget.SwitchCompat
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:theme="@style/SCBSwitch"
+                    android:layout_marginRight="@dimen/dp_8"
+                    android:fontFamily="@font/rubik_regular"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:id="@+id/switchEmail"
+                    android:checked="false"
+                    android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    </LinearLayout>
+    <View android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/Gray"/>
+
+</LinearLayout>

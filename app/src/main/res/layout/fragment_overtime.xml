@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvPath"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_8"
+            android:fontFamily="@font/rubik_regular"
+            android:textSize="@dimen/dp_14" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_16"
+            android:fontFamily="@font/rubik_regular"
+            android:text="@string/overtime_search"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/PinkRoseLight"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_8"
+            android:background="@color/LightGray"
+            android:orientation="vertical">
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/Gray" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ll_company"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_4"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rubik_light"
+                    android:text="@string/str_company"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/dp_12" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvCompany"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+
+                    android:fontFamily="@font/rubik_regular"
+                    android:hint="@string/select_company"
+                    android:textColor="@color/colorPrimaryDark" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/Gray" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ll_agency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_4"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rubik_light"
+                    android:text="@string/str_agency"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/dp_12" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvAgency"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                    android:fontFamily="@font/rubik_regular"
+                    android:hint="@string/select_agency"
+                    android:textColor="@color/colorPrimaryDark" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/Gray" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ll_dashboard_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_4"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rubik_light"
+                    android:text="@string/str_dashboard_view"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/dp_12" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvDashboard"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                    android:fontFamily="@font/rubik_regular"
+                    android:hint="@string/select_dashboard_view"
+                    android:textColor="@color/colorPrimaryDark" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/Gray" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ll_weekend_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_4"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rubik_light"
+                    android:text="@string/str_week_end_date"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/dp_12" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvWeekEndDate"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/ic_date_range_black_24dp"
+                    android:fontFamily="@font/rubik_regular"
+                    android:hint="@string/please_select"
+                    android:textColor="@color/colorPrimaryDark" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/Gray" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ll_department"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_4"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rubik_light"
+                    android:text="@string/str_department"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/dp_12" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvDepartment"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                    android:fontFamily="@font/rubik_regular"
+                    android:hint="@string/please_select"
+                    android:textColor="@color/colorPrimaryDark" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/Gray" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ll_group_by"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_4"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rubik_light"
+                    android:text="@string/str_group_by"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/dp_12" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvGroupBy"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                    android:fontFamily="@font/rubik_regular"
+                    android:hint="@string/please_select"
+                    android:textColor="@color/colorPrimaryDark" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/Gray" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ll_employee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_4"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rubik_light"
+                    android:text="@string/str_employee"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/dp_12" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvEmployee"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                    android:fontFamily="@font/rubik_regular"
+                    android:hint="@string/please_select"
+                    android:textColor="@color/colorPrimaryDark" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/Gray" />
+        </LinearLayout>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_16"
+            android:fontFamily="@font/rubik_regular"
+            android:text="Include no overtime results"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/Gray" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_16"
+            android:fontFamily="@font/rubik_regular"
+            android:text="@string/summary_totals"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/PinkRoseLight"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_8">
+
+            <LinearLayout
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_employee_black_48dp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextAppearance.AppCompat.Large"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/rubik_regular"
+                        android:maxLines="1"
+                        android:text="34" />
+
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/rubik_light"
+                    android:text="@string/str_total_emp"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/dp_12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_access_time_black_48dp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextAppearance.AppCompat.Large"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/rubik_regular"
+                        android:maxLines="1"
+                        android:text="4434" />
+
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/rubik_light"
+                    android:text="@string/str_total_hrs"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/dp_12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_ot_black_48dp"
+                        android:tint="@android:color/holo_red_light" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextAppearance.AppCompat.Large"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/rubik_regular"
+                        android:maxLines="1"
+                        android:text="34" />
+
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/rubik_light"
+                    android:text="@string/str_total_ot"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/dp_12" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/Gray" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_16"
+            android:fontFamily="@font/rubik_regular"
+            android:text="@string/matching_departments"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/PinkRoseLight"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvDepartments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</ScrollView>
